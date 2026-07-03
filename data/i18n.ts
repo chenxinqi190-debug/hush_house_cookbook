@@ -16,15 +16,15 @@ export const translations = {
       pudding: "Pudding",
       ingredients: "Ingredients",
     },
-    openRecipe: "↴ How to make this? ",
+    openRecipe: "How to make this? ",
     closeRecipe: "↵",
   },
   zh: {
     archiveTitle: "静默居屋食谱",
     search: "今天制作什么？",
     start: "要做饭吗，小图管？",
-    principles: "性向",
-    filterTip: "搜索或按性向筛选。",
+    principles: "准则",
+    filterTip: "搜索或按准则筛选。",
     requires: "材料",
     categories: {
       beverage: "饮品",
@@ -34,7 +34,7 @@ export const translations = {
       pudding: "布丁",
       ingredients: "材料",
     },
-    openRecipe: "↴ 这个又怎么做？",
+    openRecipe: "这个又怎么做？",
     closeRecipe: "↵",
   },
 };

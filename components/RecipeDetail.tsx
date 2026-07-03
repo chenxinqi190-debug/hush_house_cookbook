@@ -14,13 +14,24 @@ function RequiresList({
   recipe,
   recipes,
   language,
+  level = 0,
 }: {
   recipe: Recipe;
   recipes: Recipe[];
   language: Language;
+  level?: number;
 }) {
   const t = translations[language];
   const [openIds, setOpenIds] = useState<Set<string>>(new Set());
+  const iconClass =
+  level === 0
+    ? "max-h-20 max-w-20"
+    : "max-h-12 max-w-12";
+
+const textClass =
+  level === 0
+    ? "text-base"
+    : "text-sm";
 
   return (
     <div className="mt-2 flex flex-wrap gap-4">
@@ -55,9 +66,9 @@ function RequiresList({
                   <img
                     src={`/icons/${item.id}.png`}
                     alt={item.displayName[language]}
-                    className="mx-auto max-h-16 max-w-16 object-contain"
+                    className={`mx-auto ${iconClass} object-contain`}
                   />
-                  <span>{item.displayName[language]}</span>
+                  <span className={`mt-1 text-left ${textClass}`}>{item.displayName[language]}</span>
 
                   {childRecipe && (
                     <button
@@ -75,6 +86,7 @@ function RequiresList({
                       recipe={childRecipe}
                       recipes={recipes}
                       language={language}
+                      level={level + 1}
                     />
                   </div>
                 )}
