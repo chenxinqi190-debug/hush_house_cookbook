@@ -32,8 +32,9 @@ export interface Recipe {
 // so new values from a future data source still render sensibly.
 export const SERVES_LABELS: Record<string, string> = {
   beverage: "Beverage",
+  intoxicant: "Intoxicant",
   first_course: "First Course",
   main_course: "Main Course",
-  side_course: "Side Course",
+  side_dish: "Side Dish",
   pudding: "Pudding",
 };

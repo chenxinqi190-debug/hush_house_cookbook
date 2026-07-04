@@ -2,7 +2,7 @@
 
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useMemo, useState } from "react";
-import { mockRecipes } from "@/data/recipes";
+import { recipes as recipeData } from "@/data/recipes";
 import Sidebar from "@/components/Sidebar";
 import MobileDrawer from "@/components/MobileDrawer";
 import RecipeDetail from "@/components/RecipeDetail";
@@ -11,7 +11,7 @@ import { Language } from "@/data/i18n";
 export default function Home() {
   // In this iteration the data source is the mock array. Later this can be
   // swapped for a fetch/query without changing anything below.
-  const recipes = mockRecipes;
+  const recipes = recipeData;
   const [selectedPrincipleId, setSelectedPrincipleId] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedRecipeId, setSelectedRecipeId] = useState<string | null>(

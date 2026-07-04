@@ -38,7 +38,7 @@ const textClass =
       {recipe.requires.map((method) => (
         <div
           key={method.id}
-          className="min-w-[110px] border-r border-ink/10 pr-4 last:border-r-0"
+          className="min-w-[130px] border-r border-ink/10 pr-4 last:border-r-0"
         >
           {method.requires.map((ingredientId) => {
             const item = items[ingredientId];
@@ -49,6 +49,7 @@ const textClass =
               <div key={ingredientId} className="mb-4">
                 <button
                   type="button"
+                  disabled={!childRecipe}
                   onClick={() => {
                     if (!childRecipe) return;
 
@@ -61,22 +62,24 @@ const textClass =
                       return next;
                     });
                   }}
-                  className="w-28 flex flex-col"
+                  className={`w-28 flex flex-col ${
+  childRecipe
+    ? "cursor-pointer"
+    : "cursor-default"
+}`}
                 >
                   <img
                     src={`/icons/${item.id}.png`}
                     alt={item.displayName[language]}
                     className={`mx-auto ${iconClass} object-contain`}
                   />
-                  <span className={`mt-1 text-left ${textClass}`}>{item.displayName[language]}</span>
+                  <span className={`mt-1 text-middle ${textClass}`}>{item.displayName[language]}</span>
 
                   {childRecipe && (
-                    <button
-                      type="button"
-                      className="mt-1 text-xs text-ink/60 hover:text-ink"
+                    <span className="mt-1 text-xs text-ink/60 hover:text-ink"
                     >
                       {isOpen ? t.closeRecipe : t.openRecipe}
-                    </button>
+                    </span>
                   )}
                 </button>
 
@@ -102,7 +105,7 @@ export default function RecipeDetail({ recipe, recipes, language }: RecipeDetail
   const t = translations[language];
   if (!recipe) {
     return (
-      <div className="flex h-full items-center justify-center">
+      <div className="flex h-full items-center justify-center pt-22 pl-4 pr-4">
         <p className="text-3xl italic text-ink/80">
           {t.start}
         </p>
@@ -111,16 +114,16 @@ export default function RecipeDetail({ recipe, recipes, language }: RecipeDetail
   }
 
   return (
-    <article className="mx-auto max-w-xl px-8 py-14">
+    <article className="w-full max-w-4xl px-8 py-14 md:ml-20">
       {/* Category */}
-      <p className="text-lg uppercase tracking-[0.2em] text-ink/60">
+      <p className="text-lg uppercase tracking-[0.2em] text-ink/80">
         {recipe.serves
   .map((serves) => t.categories[serves as keyof typeof t.categories] ?? serves)
-  .join(" · ")}
+  .join(" / ")}
       </p>
 
       {/* Recipe title */}
-      <h2 className="mt-2 text-3xl leading-snug text-ink">
+      <h2 className="mt-2 text-4xl leading-snug text-ink">
         {recipe.displayName[language]}
       </h2>
 
@@ -141,11 +144,11 @@ export default function RecipeDetail({ recipe, recipes, language }: RecipeDetail
       </div>
 
       {/* Description */}
-      <p className="mt-12 leading-relaxed text-ink/80">{recipe.description[language]}</p>
+      <p className="mt-12 text-lg leading-relaxed text-ink">{recipe.description[language]}</p>
 
       {/* Principles */}
       <section className="mt-12">
-        <h3 className="text-lg uppercase tracking-[0.2em] text-ink/60">
+        <h3 className="text-2xl uppercase tracking-[0.2em] text-ink/80">
           {t.principles}
         </h3>
         {recipe.principles.length > 0 ? (
@@ -178,7 +181,7 @@ export default function RecipeDetail({ recipe, recipes, language }: RecipeDetail
 
       {/* Requires */}
       <section className="mt-12">
-        <h3 className="text-lg uppercase tracking-[0.2em] text-ink/60 mb-4">
+        <h3 className="text-2xl uppercase tracking-[0.2em] text-ink/80 mb-4">
           {t.requires}
         </h3>
         {recipe.requires.length > 0 ? (
@@ -188,8 +191,8 @@ export default function RecipeDetail({ recipe, recipes, language }: RecipeDetail
     language={language}
   />
 ) : (
-  <p className="mt-2 text-sm italic text-ink/40">
-    None.</p>
+  <p className="mt-2 text-lg italic text-ink">
+    {t.noRequires}</p>
         )}
       </section>
       {/* Note */}
@@ -198,7 +201,7 @@ export default function RecipeDetail({ recipe, recipes, language }: RecipeDetail
               {recipe.note[language].map((line, index) => (
       <p
         key={index}
-        className="text-sm italic text-ink/60 leading-relaxed"
+        className="text-base italic text-ink/60 leading-relaxed"
       >
         {line}
       </p>

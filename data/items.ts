@@ -8,6 +8,14 @@ export interface Item {
 }
 
 export const items: Record<string, Item> = {
+  acrid_marrow: {
+    id: "acrid_marrow",
+    displayName: {
+      en: "Acrid Marrow", 
+      zh: "苦西葫芦",
+    },
+    icon: "acrid_marrow.png",
+  },
   agave_aeterna: {
     id: "agave_aeterna",
     displayName: {
@@ -16,6 +24,22 @@ export const items: Record<string, Item> = {
     },
     icon: "agave_aeterna.png",
   },
+  aglaophotis: {
+    id: "aglaophotis",
+    displayName: {
+      en: "Aglaophotis", 
+      zh: "阿格劳福提斯花",
+    },
+    icon: "aglaophotis.png",
+  },
+  almonds: {
+    id: "almonds",
+    displayName: {
+      en: "Almonds", 
+      zh: "杏仁",
+    },
+    icon: "almonds.png",
+  },
   amber_pumpkin: {
     id: "amber_pumpkin",
     displayName: {
@@ -23,6 +47,54 @@ export const items: Record<string, Item> = {
       zh: "珀色南瓜",
     },
     icon: "amber_pumpkin.png",
+  },
+  basket_apples: {
+    id: "basket_apples",
+    displayName: {
+      en: "Basket of Apples",
+      zh: "一篮苹果",
+    },
+    icon: "basket_apples.png",
+  },
+  basket_leeks: {
+    id: "basket_leeks",
+    displayName: {
+      en: "Basket of Leeks",
+      zh: "一篮韭葱",
+    },
+    icon: "basket_leeks.png",
+  },
+  basket_onions: {
+    id: "basket_onions",
+    displayName: {
+      en: "Basket of Onions",
+      zh: "一篮洋葱",
+    },
+    icon: "basket_onions.png",
+  },
+  basket_vegetables: {
+    id: "basket_vegetables",
+    displayName: {
+      en: "Basket of Vegetables",
+      zh: "一篮蔬菜",
+    },
+    icon: "basket_vegetables.png",
+  },
+  batter: {
+    id: "batter",
+    displayName: {
+      en: "Batter",
+      zh: "面糊",
+    },
+    icon: "batter.png",
+  },
+  beef: {
+    id: "beef",
+    displayName: {
+      en: "Beef",
+      zh: "牛肉",
+    },
+    icon: "beef.png",
   },
   blackberries: {
     id: "blackberries",
@@ -48,12 +120,20 @@ export const items: Record<string, Item> = {
     },
     icon: "boiled_egg.png",
   },
-    bronze_knife:{
+  bowl_of_sea_blest_pears: {
+    id: "bowl_of_sea_blest_pears",
+    displayName: {
+      en: "Bowl of Sea-Blest Pears",
+      zh: "一碗海佑梨",
+    },
+    icon: "bowl_of_sea_blest_pears.png",
+  },
+  bronze_knife:{
     id: "bronze_knife",
     displayName: {
       en: "Bronze Knife",
       zh: "青铜刀",
-    },
+  },
     icon: "bronze_knife.png",
   },
   bunch_of_grapes: {
@@ -63,6 +143,22 @@ export const items: Record<string, Item> = {
       zh: "一串葡萄",
     },
     icon: "bunch_of_grapes.png",
+  },
+  butter: {
+    id: "butter",
+    displayName: {
+      en: "Butter",
+      zh: "黄油",
+    },
+    icon: "butter.png",
+  },
+  canned_ham: {
+    id: "canned_ham",
+    displayName: {
+      en: "Canned Ham",
+      zh: "火腿罐头",
+    },
+    icon:"canned_ham.png"
   },
   crusty_bread: {
     id: "crusty_bread",
@@ -80,19 +176,19 @@ export const items: Record<string, Item> = {
     },
     icon: "ch_second_flush_assam_pot.png",
   },
-  veiled_goddess_lapsang_souchong_pot: {
-    id: "veiled_goddess_lapsang_souchong_pot",
+  dark_marrow: {
+    id: "dark_marrow",
     displayName: {
-      en: "Veiled Goddess Lapsang Souchong (Pot)",
-      zh: "面纱女神正山小种（一壶）",
+      en: "Dark Marrow", 
+      zh: "黯西葫芦",
     },
-    icon: "veiled_goddess_lapsang_souchong_pot.png",
+    icon: "dark_marrow.png",
   },
   dough: {
     id: "dough",
     displayName: {
       en: "Dough",
-      zh: "面团",
+      zh: "生面团",
     },
     icon: "dough.png",
   },
@@ -111,6 +207,14 @@ export const items: Record<string, Item> = {
       zh: "香盏花",
     },
     icon: "fragrant_chalice.png",
+  },
+  golden_marrow: {
+    id: "golden_marrow",
+    displayName: {
+      en: "Golden Marrow", 
+      zh: "金黄西葫芦",
+    },
+    icon: "golden_marrow.png",
   },
   hens_egg: {
     id: "hens_egg",
@@ -132,7 +236,7 @@ export const items: Record<string, Item> = {
     id: "intoxicating",
     displayName: {
       en: "Intoxicating",
-      zh: "含酒精饮料",
+      zh: "烈酒",
     },
     icon: "intoxicating.png",
   },
@@ -152,6 +256,30 @@ export const items: Record<string, Item> = {
     },
     icon: "mackerel.png",
   },
+  marinated_beef_uncooked: {
+    id: "marinated_beef_uncooked",
+    displayName: {
+      en: "Marinated Beef (Uncooked)",
+      zh: "渍牛肉（未烹饪的）",
+    },
+    icon: "marinated_beef_uncooked.png",
+  },
+  marinated_onions: {
+    id: "marinated_onions",
+    displayName: {
+      en: "Marinated Onions",
+      zh: "腌洋葱",
+    },
+    icon: "marinated_onions.png",
+  },
+  moly: {
+    id: "moly",
+    displayName: {
+      en: "Moly",
+      zh: "摩吕",
+    },
+    icon: "moly.png",
+  },
   mushrooms: {
     id: "mushrooms",
     displayName: {
@@ -159,6 +287,22 @@ export const items: Record<string, Item> = {
       zh: "蘑菇",
     },
     icon: "mushrooms.png",
+  },
+  pale_marrow: {
+    id: "pale_marrow",
+    displayName: {
+      en: "Pale Marrow", 
+      zh: "苍白西葫芦",
+    },
+    icon: "pale_marrow.png",
+  },
+  pear_pie: {
+    id: "pear_pie",
+    displayName: {
+      en: "Pear Pie", 
+      zh: "梨子派",
+    },
+    icon: "pear_pie.png",
   },
   pheasant: {
     id: "pheasant",
@@ -176,11 +320,116 @@ export const items: Record<string, Item> = {
     },
     icon: "pickled_mushrooms.png",
   },
-pillas_oat_bread: {
+  pickled_pilchards: {
+    id: "pickled_pilchards",
+    displayName: {
+      en: "Pickled Pilchards",
+      zh: "腌沙丁鱼",
+    },
+    icon: "pickled_pilchards.png",
+  },
+  pilchards: {
+    id: "pilchards",
+    displayName: {
+      en: "Pilchards",
+      zh: "沙丁鱼",
+    },
+    icon: "pilchards.png",
+  },
+  pillas_oat_bread: {
     id: "pillas_oat_bread",
     displayName: {
       en: "Pillas Oat Bread",
       zh: "小莜麦面包",
     },
     icon: "pillas_oat_bread.png",
-  },}
+  },
+  plums: {
+    id: "plums",
+    displayName: {
+      en: "Plums",
+      zh: "西梅",
+    },
+    icon: "plums.png",
+    },
+    potatoes: {
+    id: "potatoes",
+    displayName: {
+      en: "Potatoes",
+      zh: "土豆",
+    },
+    icon: "potatoes.png",
+    },
+  pumpkin: {
+    id: "pumpkin",
+    displayName: {
+      en: "Pumpkin",
+      zh: "南瓜",
+    },
+    icon: "pumpkin.png",
+    },
+  pyrus_auricalcinus: {
+    id: "pyrus_auricalcinus",
+    displayName: {
+      en: "Pyrus Auricalcinus",
+      zh: "铜梨",
+    },
+    icon: "pyrus_auricalcinus.png",
+    },
+    roast_beef: {
+    id: "roast_beef",
+    displayName: {
+      en: "Roast Beef",
+      zh: "烤牛肉",
+    },
+    icon: "roast_beef.png",
+    },
+  rosehips: {
+    id: "rosehips",
+    displayName: {
+      en: "Rosehips",
+      zh: "玫瑰果",
+    },
+    icon: "rosehips.png",
+    },
+  sack_vegetables: {
+  id: "sack_vegetables",
+  displayName: {
+    en: "Sack of Vegetables",
+    zh: "一袋蔬菜"
+  },
+  icon: "sack_vegetables.png",
+},
+  sea_pie: {
+  id: "sea_pie",
+  displayName: {
+    en: "Sea Pie",
+    zh: "海馅饼"
+  },
+  icon: "sea_pie.png",
+},
+  spicing: {
+  id: "spicing",
+  displayName: {
+    en: "Spicing",
+    zh: "香料"
+  },
+  icon: "spicing.png",
+},
+  soft_amber_pumpkin: {
+  id: "soft_amber_pumpkin",
+  displayName: {
+    en: "Soft Amber Pumpkin",
+    zh: "柔嫩珀色南瓜"
+  },
+  icon: "soft_amber_pumpkin.png",
+},
+veiled_goddess_lapsang_souchong_pot: {
+    id: "veiled_goddess_lapsang_souchong_pot",
+    displayName: {
+      en: "Veiled Goddess Lapsang Souchong (Pot)",
+      zh: "面纱女神正山小种（一壶）",
+    },
+    icon: "veiled_goddess_lapsang_souchong_pot.png",
+  },
+}

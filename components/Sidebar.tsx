@@ -28,7 +28,7 @@ const CATEGORY_ORDER = [
   "beverage",
   "first_course",
   "main_course",
-  "side_course",
+  "side_dish",
   "pudding",
   "ingredients",
 ];
@@ -73,8 +73,8 @@ searchQuery.trim() !== "" || selectedPrincipleId !== null;
 
   return (
     <div className="flex h-full flex-col">
-      <div className="px-4 pt-10 pb-20">
-        <h1 className="text-5xl tracking-[0.1em] text-ink">{t.archiveTitle}</h1>
+      <div className="px-4 pt-6 pb-4 md:pt-10 md:pb-20">
+        <h1 className="text-4xl tracking-[0.1em] text-ink md:text-5xl">{t.archiveTitle}</h1>
       </div>
 
       <SearchBar value={searchQuery} onChange={onSearchChange} language={language} />
@@ -84,11 +84,11 @@ searchQuery.trim() !== "" || selectedPrincipleId !== null;
       onSelectPrinciple={onSelectPrinciple}
       />
 
-      <div className="px-4 pb-6">
+      <div className="hidden px-4 pb-6 md:block">
         <p className="text-sm text-ink/60">{t.filterTip}</p>
       </div>
 
-      <nav className="flex-1 overflow-y-auto px-2">
+      <nav className="min-h-0 flex-1 overflow-y-auto px-2">
         {orderedCategories.map((category) => (
           <CategorySection
             key={category}

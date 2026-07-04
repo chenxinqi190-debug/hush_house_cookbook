@@ -24,7 +24,7 @@ export default function PrincipleFilter({
   onSelectPrinciple,
 }: PrincipleFilterProps) {
   return (
-    <div className="px-4 pb-8">
+    <div className="px-4 pb-2 md:pb-8">
       <div className="flex flex-wrap gap-2">
         {PRINCIPLES.map((principleId) => {
           const isSelected = selectedPrincipleId === principleId;
