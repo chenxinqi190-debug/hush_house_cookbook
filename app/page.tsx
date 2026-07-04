@@ -1,7 +1,7 @@
 "use client";
 
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { recipes as recipeData } from "@/data/recipes";
 import Sidebar from "@/components/Sidebar";
 import MobileDrawer from "@/components/MobileDrawer";
@@ -11,6 +11,7 @@ import { Language } from "@/data/i18n";
 export default function Home() {
   // In this iteration the data source is the mock array. Later this can be
   // swapped for a fetch/query without changing anything below.
+  const [isMounted, setIsMounted] = useState(false);
   const recipes = recipeData;
   const [selectedPrincipleId, setSelectedPrincipleId] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
@@ -19,6 +20,50 @@ export default function Home() {
   );
   const [language, setLanguage] = useState<Language>("en");
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  useEffect(() => {
+  setIsMounted(true);
+
+  const savedLanguage = localStorage.getItem("language") as Language | null;
+  const savedRecipeId = localStorage.getItem("selectedRecipeId");
+  const savedSearchQuery = localStorage.getItem("searchQuery");
+  const savedPrincipleId = localStorage.getItem("selectedPrincipleId");
+
+  if (savedLanguage === "en" || savedLanguage === "zh") setLanguage(savedLanguage);
+  if (savedRecipeId) setSelectedRecipeId(savedRecipeId);
+  if (savedSearchQuery) setSearchQuery(savedSearchQuery);
+  if (savedPrincipleId) setSelectedPrincipleId(savedPrincipleId);
+}, []);
+
+  useEffect(() => {
+     if (!isMounted) return;
+  localStorage.setItem("language", language);
+}, [language, isMounted]);
+
+  useEffect(() => {
+    if (!isMounted) return;
+
+  if (selectedRecipeId) {
+    localStorage.setItem("selectedRecipeId", selectedRecipeId);
+  } else {
+    localStorage.removeItem("selectedRecipeId");
+  }
+}, [selectedRecipeId, isMounted]);
+
+  useEffect(() => {
+  if (!isMounted) return;
+  localStorage.setItem("searchQuery", searchQuery);
+}, [searchQuery, isMounted]);
+
+useEffect(() => {
+   if (!isMounted) return;
+
+  if (selectedPrincipleId) {
+    localStorage.setItem("selectedPrincipleId", selectedPrincipleId);
+  } else {
+    localStorage.removeItem("selectedPrincipleId");
+  }
+}, [selectedPrincipleId, isMounted]);
 
   // Category filtering now happens visually through the sidebar accordion
   // (only the relevant category needs opening), so the only filtering
@@ -58,7 +103,9 @@ export default function Home() {
     onSelectPrinciple: setSelectedPrincipleId,
     language,
   };
-
+if (!isMounted) {
+  return null;
+}
   return (
     <div className="bg-parchment flex h-screen overflow-hidden text-ink">
       {/* Desktop sidebar */}

@@ -1,3 +1,5 @@
+import { Happy_Monkey } from "next/font/google";
+
 export interface Item {
   id: string;
   displayName: {
@@ -104,6 +106,14 @@ export const items: Record<string, Item> = {
     },
     icon: "blackberries.png",
   },
+   blackberry_jam: {
+    id: "blackberry_jam",
+    displayName: {
+      en: "Blackberry Jam",
+      zh: "黑莓酱",
+    },
+    icon: "blackberry_jam.png",
+  },
   blue_crown: {
     id: "blue_crown",
     displayName: {
@@ -119,6 +129,14 @@ export const items: Record<string, Item> = {
       zh: "煮鸡蛋",
     },
     icon: "boiled_egg.png",
+  },
+  bottle_milk: {
+    id: "bottle_milk",
+    displayName: {
+      en: "Bottle of Milk",
+      zh: "奶",
+    },
+    icon: "bottle_milk.png",
   },
   bowl_of_sea_blest_pears: {
     id: "bowl_of_sea_blest_pears",
@@ -152,6 +170,14 @@ export const items: Record<string, Item> = {
     },
     icon: "butter.png",
   },
+  cake_batter: {
+    id: "cake_batter",
+    displayName: {
+      en: "Cake Batter",
+      zh: "蛋糕面糊",
+    },
+    icon:"cake_batter.png"
+  },
   canned_ham: {
     id: "canned_ham",
     displayName: {
@@ -160,13 +186,21 @@ export const items: Record<string, Item> = {
     },
     icon:"canned_ham.png"
   },
+  creamed_sugar: {
+    id: "creamed_sugar",
+    displayName: {
+      en: "Creamed Sugar",
+      zh: "打发黄油",
+    },
+    icon: "creamed_sugar.png",
+  },
   crusty_bread: {
     id: "crusty_bread",
     displayName: {
       en: "Crusty Bread",
       zh: "硬皮面包",
     },
-    icon: "bread.png",
+    icon: "crusty_bread.png",
   },
   ch_second_flush_assam_pot: {
     id: "ch_second_flush_assam_pot",
@@ -224,6 +258,14 @@ export const items: Record<string, Item> = {
     },
     icon: "hens_egg.png",
   },
+  honey: {
+    id: "honey",
+    displayName: {
+      en: "Honey",
+      zh: "蜂蜜",
+    },
+    icon: "honey.png",
+  },
   honeyscar_jasmine: {
     id: "honeyscar_jasmine",
     displayName: {
@@ -271,6 +313,14 @@ export const items: Record<string, Item> = {
       zh: "腌洋葱",
     },
     icon: "marinated_onions.png",
+  },
+  meringue: {
+    id: "meringue",
+    displayName: {
+      en: "Meringue",
+      zh: "蛋白酥",
+    },
+    icon: "meringue.png",
   },
   moly: {
     id: "moly",
@@ -423,6 +473,14 @@ export const items: Record<string, Item> = {
     zh: "柔嫩珀色南瓜"
   },
   icon: "soft_amber_pumpkin.png",
+},
+sugar: {
+  id: "sugar",
+  displayName: {
+    en: "Sugar",
+    zh: "糖"
+  },
+  icon: "sugar.png",
 },
 veiled_goddess_lapsang_souchong_pot: {
     id: "veiled_goddess_lapsang_souchong_pot",

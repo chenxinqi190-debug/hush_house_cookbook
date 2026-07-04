@@ -114,7 +114,7 @@ export default function RecipeDetail({ recipe, recipes, language }: RecipeDetail
   }
 
   return (
-    <article className="w-full max-w-4xl px-8 py-14 md:ml-20">
+    <article className="w-full max-w-4xl px-8 pt-6 pb-14 md:ml-20">
       {/* Category */}
       <p className="text-lg uppercase tracking-[0.2em] text-ink/80">
         {recipe.serves

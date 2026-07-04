@@ -368,6 +368,136 @@ export const recipes: Recipe[] = [
     type: ["dish"],
     icon: "apple_charlotte.png",
     note: {
+      en: ["bread...The Spices & Savours skill can also be used as spicing."],
+      zh: ["“香料与滋味”技能也可以作为香料使用。"]
+    }
+  },
+  {
+    id: "apple_pie",
+    displayName: {
+      en: "Apple Pie",
+      zh: "苹果派",
+    },
+    description: {
+      en: "Flaky, buttery crust; tart-sweet apples with cinnamon and nutmeg.",
+      zh: "涂着黄油的薄脆酥皮，酸甜的苹果果肉，搭配上肉桂和肉豆蔻的香气。",
+    },
+    requires: [
+      {
+        id: "method 1",
+        requires: ["basket_apples","dough","spicing"]
+      }
+    ],
+    principles: [
+      {
+        id: "principle.forge",
+        amount: 1,
+      },
+      {
+        id: "principle.grail",
+        amount: 1,
+      },
+      {
+        id: "principle.heart",
+        amount: 2,
+      },
+      {
+        id: "principle.nectar",
+        amount: 1,
+      }
+    ],
+    serves: ["pudding"],
+    type: ["dish"],
+    icon: "apple_pie.png",
+    note: {
+      en: ["The Spices & Savours skill can also be used as spicing."],
+      zh: ["“香料与滋味”技能也可以作为香料使用。"]
+    }
+  },
+  {
+    id: "bake_apple_meringue",
+    displayName: {
+      en: "Baked Apple Meringue",
+      zh: "烤苹果蛋白酥",
+    },
+    description: {
+      en: "Harvey Hattington, during his convalescence at the House, was so obsessed with meringuing techniques that he was ultimately banned from the kitchen.",
+      zh: "在居屋疗养期间，哈维·哈廷顿迷上了蛋白酥工艺，以至最后被厨房禁止入内。",
+    },
+    requires: [
+      {
+        id: "method 1",
+        requires: ["basket_apples","meringue","spicing"]
+      }
+    ],
+    principles: [
+      {
+        id: "principle.forge",
+        amount: 1,
+      },
+      {
+        id: "principle.grail",
+        amount: 2,
+      },
+      {
+        id: "principle.nectar",
+        amount: 1,
+      },
+      {
+        id: "principle.winter",
+        amount: 1,
+      }
+    ],
+    serves: ["pudding"],
+    type: ["dish"],
+    icon: "bake_apple_meringue.png",
+    note: {
+      en: ["The Spices & Savours skill can also be used as spicing."],
+      zh: ["“香料与滋味”技能也可以作为香料使用。"]
+    }
+  },
+  {
+    id: "bake_pear_meringue",
+    displayName: {
+      en: "Baked Pear Meringue",
+      zh: "烤梨子蛋白酥",
+    },
+    description: {
+      en: "Harvey Hattington, during his convalescence at the House, became obsessed with meringuing techniques. He was known to sneak down to the kitchens and interfere with the cooks in pursuit of his ideal.",
+      zh: "在居屋疗养期间，哈维·哈廷顿迷上了蛋白酥工艺。他是出了名地喜欢溜到下边的厨房里，为了自己的荒诞想法打搅厨师们。",
+    },
+    requires: [
+      {
+        id: "method 1",
+        requires: ["bowl_of_sea_blest_pears","meringue","spicing"]
+      }
+    ],
+    principles: [
+      {
+        id: "principle.forge",
+        amount: 1,
+      },
+      {
+        id: "principle.grail",
+        amount: 2,
+      },
+      {
+        id: "principle.moon",
+        amount: 1,
+      },
+      {
+        id: "principle.nectar",
+        amount: 1,
+      },
+      {
+        id: "principle.winter",
+        amount: 1,
+      }
+    ],
+    serves: ["pudding"],
+    type: ["dish"],
+    icon: "bake_pear_meringue.png",
+    note: {
       en: ["The Spices & Savours skill can also be used as spicing."],
       zh: ["“香料与滋味”技能也可以作为香料使用。"]
     }
@@ -396,6 +526,82 @@ export const recipes: Recipe[] = [
     serves: ["first_course","ingredients"],
     type: ["dish","ingredients"],
     icon: "blackberries.png",
+  },
+  {
+    id: "blackberry_jam",
+    displayName: {
+      en: "Blackberry Jam",
+      zh: "黑莓酱",
+    },
+    description: {
+      en: "Plucked from hedgerows.",
+      zh: "采自灌木绿篱。",
+    },
+    requires: [
+      {
+        id: "method 1",
+        requires: ["blackberries","sugar"]
+      }
+    ],
+    principles: [
+      {
+        id: "principle.grail",
+        amount: 1,
+      },
+      {
+        id: "principle.heart",
+        amount: 1,
+      },
+      {
+        id: "principle.nectar",
+        amount: 1,
+      },
+      {
+        id: "principle.rose",
+        amount: 1,
+      }
+    ],
+    serves: ["ingredients"],
+    type: ["ingredients"],
+    icon: "blackberry_jam.png"
+  },
+  {
+    id: "blackberry_sponge_cake",
+    displayName: {
+      en: "Blackberry Sponge Cake",
+      zh: "黑莓海绵蛋糕",
+    },
+    description: {
+      en: "Light, sweet sponge cake and the taste of autumn hedgerows.",
+      zh: "轻盈而甜美的海绵蛋糕，秋日树篱般的味道。",
+    },
+    requires: [
+      {
+        id: "method 1",
+        requires: ["blackberry_jam","cake_batter"]
+      }
+    ],
+    principles: [
+      {
+        id: "principle.grail",
+        amount: 2,
+      },
+      {
+        id: "principle.heart",
+        amount: 2,
+      },
+      {
+        id: "principle.nectar",
+        amount: 1,
+      },
+      {
+        id: "principle.rose",
+        amount: 1,
+      }
+    ],
+    serves: ["pudding"],
+    type: ["dish"],
+    icon: "blackberry_sponge_cake.png"
   },
   {
     id: "boiled_egg",
@@ -433,6 +639,31 @@ export const recipes: Recipe[] = [
     serves: ["first_course","ingredients"],
     type: ["dish"],
     icon: "boiled_egg.png",
+  },
+  {
+    id: "cake_batter",
+    displayName: {
+      en: "Cake Batter",
+      zh: "蛋糕面糊",
+    },
+    description: {
+      en: "[Add something sweet like jam - or add Almonds and spices.]",
+      zh: "排列整齐，营养丰富，苍白如十二月的拂晓。",
+    },
+    requires: [
+      {
+        id: "method 1",
+        requires: ["dough","hens_egg","kitchen_bowls"]
+      }
+    ],
+    principles: [
+      {
+        id: "principle.heart",
+        amount: 1,
+      },],
+    serves: ["ingredients"],
+    type: ["ingredients"],
+    icon: "cake_batter.png",
   },
  {
     id: "cold_pheasant_n_grape_salad",
@@ -477,6 +708,40 @@ export const recipes: Recipe[] = [
     icon: "cold_pheasant_n_grape_salad.png",
   },
   {
+    id: "cornish_honey_cake",
+    displayName: {
+      en: "Cornish Honey Cake",
+      zh: "康沃尔蜂蜜蛋糕",
+    },
+    description: {
+      en: "Under no circumstances should this ever be confused with Devonshire Honey Cake, which everyone in Brancrug could instantly identify as an inferior variation.",
+      zh: "在任何情况下都不应将它与德文郡蜂蜜蛋糕相混淆，因为在布兰库格，每个人都能立刻认出后者是前者拙劣的变体。",
+    },
+    requires: [
+      {
+        id: "method 1",
+        requires: ["cake_batter","honey"]
+      }
+    ], 
+    principles: [
+      {
+        id: "principle.heart",
+        amount: 2,
+      },
+      {
+        id: "principle.lantern",
+        amount: 2,
+      },
+      {
+        id: "principle.moth",
+        amount: 2,
+      }
+    ],
+    serves: ["pudding"],
+    type: ["dish"],
+    icon: "cornish_honey_cake.png",
+  },
+  {
     id: "cottage_pie",
     displayName: {
       en: "Cottage Pie",
@@ -505,6 +770,32 @@ export const recipes: Recipe[] = [
     serves: ["main_course"],
     type: ["dish"],
     icon: "cottage_pie.png",
+  },
+  {
+    id: "creamed_sugar",
+    displayName: {
+      en: "Creamed Sugar",
+      zh: "打发黄油",
+    },
+    description: {
+      en: "A precursor to Sticky Toffee Pudding (with bread) and to Fudge (without bread): both notorious as founding crimes of twentieth-century culinary debauchery.",
+      zh: "粘稠太妃糖布丁（带面包）与法奇软糖（不带面包）的前身：两者都被认为是导致20世纪“烹饪堕落”的奠基性罪行。",
+    },
+    requires: [
+      {
+        id: "method 1",
+        requires: ["butter","kitchen_bowls","sugar"]
+      }
+    ],
+    principles: [
+      {
+        id: "principle.heart",
+        amount: 1,
+      }
+    ],
+    serves: ["ingredients"],
+    type: ["ingredients"],
+    icon: "creamed_sugar.png",
   },
   {
     id: "crusty_bread",
@@ -541,7 +832,7 @@ export const recipes: Recipe[] = [
       },
     ],
     serves: ["side_dish","ingredients"],
-    type: ["dish"],
+    type: ["dish","ingredients"],
     icon: "crusty_bread.png",
   },
   {
@@ -669,6 +960,43 @@ export const recipes: Recipe[] = [
       en: ["1. The Pillas-Oat Bread located in Keeper's Lodge can also be used as bread, but it is unique and therefore omitted from the standard recipe.","2. Any object with the aspect of Knife can be used as a knife, but the Bronze Knife is the most practical choice."],
       zh: ["1. 守门人小屋中的小莜麦面包也可作为这里的面包使用，但由于它是唯一物品，因此未列入标准制作路径。","2. 任何具有刀具属性的物品都可以用作刀具，但青铜刀是最实用的选择……大概吧。"],
     }, 
+  },
+  {
+    id: "floating_island",
+    displayName: {
+      en: "Floating Island",
+      zh: "浮岛蛋糕"
+    },
+    description: {
+      en: "Vanilla, custard, and meringue, landscaped and caramelled: a Claridge's speciality.",
+      zh: "香草、蛋奶沙司还有蛋白酥，浮岛美景佐以焦糖：克拉里奇特色菜。"
+    },
+    requires: [
+      {
+        id: "method 1",
+        requires: ["bottle_milk","meringue"],}
+    ],
+    principles: [
+      {
+        id: "principle.grail",
+        amount: 2,
+      },
+      {
+        id: "principle.heart",
+        amount: 2,
+      },
+      {
+        id: "principle.rose",
+        amount: 1,
+      },
+      {
+        id: "principle.sky",
+        amount: 1,
+      }
+    ],
+    serves: ["pudding"],
+    type: ["dish"],
+    icon: "floating_island.png",
   },
   {
     id: "fried_mushrooms_on_toast",
@@ -1437,6 +1765,46 @@ export const recipes: Recipe[] = [
     serves: ["main_course"],
     type: ["dish"],
     icon: "marinated_roast_beef.png",
+  },
+  {
+    id: "meringue",
+    displayName: {
+      en: "Meringue",
+      zh: "蛋白酥"
+    },
+    description: {
+      en: "Add to milk for a legendary dessert. Or, with Spicing, add to apples or pears - even to mushrooms, if you're feeling perverse.",
+      zh: "可以加入奶水、苹果、梨子……如果你口味独特的话，蘑菇也行。"
+    },
+    requires: [
+      {
+        id: "method 1",
+        requires: ["hens_egg", "sugar","kitchen_bowls"]
+      }
+    ],
+    principles: [
+      {
+        id: "principle.grail",
+        amount: 1,
+      },{
+        id: "principle.heart",
+        amount: 2,
+      },
+      {
+        id: "principle.rose",
+        amount: 1,
+      },
+      {
+        id: "principle.sky",
+        amount: 1,
+      },
+      {
+        id: "principle.winter",
+        amount: 1,
+      }],
+    serves: ["ingredients"],
+    type: ["ingredients"],
+    icon: "meringue.png"
   },
   {
     id: "moly_au_jus",
