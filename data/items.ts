@@ -146,13 +146,13 @@ export const items: Record<string, Item> = {
     },
     icon: "bowl_of_sea_blest_pears.png",
   },
-  bronze_knife:{
-    id: "bronze_knife",
+  knife:{
+    id: "knife",
     displayName: {
-      en: "Bronze Knife",
-      zh: "青铜刀",
+      en: "Knife",
+      zh: "刀",
   },
-    icon: "bronze_knife.png",
+    icon: "knife.png",
   },
   bunch_of_grapes: {
     id: "bunch_of_grapes",
@@ -177,6 +177,14 @@ export const items: Record<string, Item> = {
       zh: "蛋糕面糊",
     },
     icon:"cake_batter.png"
+  },
+  cuckoo_honey: {
+    id: "cuckoo_honey",
+    displayName: {
+      en: "Cuckoo Honey",
+      zh: "杜鹃蜜",
+    },
+    icon:"cuckoo_honey.png"
   },
   canned_ham: {
     id: "canned_ham",
@@ -226,11 +234,19 @@ export const items: Record<string, Item> = {
     },
     icon: "dough.png",
   },
+  flour: {
+    id: "flour",
+    displayName: {
+      en: "Flour",
+      zh: "面粉",
+    },
+    icon: "flour.png",
+  },
   dripping: {
     id: "dripping",
     displayName: {
       en: "Dripping",
-      zh: "口水油",
+      zh: "烤肉滴油",
     },
     icon: "dripping.png",
   },
@@ -273,6 +289,14 @@ export const items: Record<string, Item> = {
     zh: "蜜痂茉莉",
     },
     icon: "honeyscar_jasmine.png",
+  },
+  isle_water: {
+    id: "isle_water",
+    displayName: {
+      en: "Isle Water",
+      zh: "岛上井水",
+    },
+    icon: "isle_water.png",
   },
   intoxicating: {
     id: "intoxicating",
@@ -321,6 +345,14 @@ export const items: Record<string, Item> = {
       zh: "蛋白酥",
     },
     icon: "meringue.png",
+  },
+  mist_kissed_water: {
+    id: "mist_kissed_water",
+    displayName: {
+      en: "Mist-Kissed Water",
+      zh: "雾吻之水",
+    },
+    icon: "mist_kissed_water.png",
   },
   moly: {
     id: "moly",
@@ -441,6 +473,14 @@ export const items: Record<string, Item> = {
       zh: "玫瑰果",
     },
     icon: "rosehips.png",
+    },
+    rosehip_jam: {
+    id: "rosehip_jam",
+    displayName: {
+      en: "Rosehip Jam",
+      zh: "玫瑰果酱",
+    },
+    icon: "rosehip_jam.png",
     },
   sack_vegetables: {
   id: "sack_vegetables",

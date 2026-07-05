@@ -232,8 +232,8 @@ export const recipes: Recipe[] = [
       zh: "杏仁",
     },
     description: {
-      en: "Add Sugar and spice to make Jumble.",
-      zh: "加入糖与香料以制作轮状甜饼。",
+      en: "[Add Sugar and spice to make Jumble.]",
+      zh: "[加入糖与香料以制作轮状甜饼。]",
     },
     requires: [],
     principles: [
@@ -250,7 +250,7 @@ export const recipes: Recipe[] = [
         amount: 1,
       }
     ],
-    serves: ["side_dish","ingredients"],
+    serves: ["side_dish"],
     type: ["dish","ingredients"],
     icon: "almonds.png",
   },
@@ -334,11 +334,11 @@ export const recipes: Recipe[] = [
     id: "apple_charlotte",
     displayName: {
       en: "Apple Charlotte",
-      zh: "苹果奶油布丁",
+      zh: "苹果夏洛特蛋糕",
     },
     description: {
       en: "A classic English pudding of apples stewed with cinnamon and layered with crisp golden bread.",
-      zh: "？？",
+      zh: "一道经典英式甜点。由炖煮过的苹果与肉桂制成，一层一层铺在酥脆金黄的面包之间。",
     },
     requires: [
       {
@@ -368,8 +368,8 @@ export const recipes: Recipe[] = [
     type: ["dish"],
     icon: "apple_charlotte.png",
     note: {
-      en: ["bread...The Spices & Savours skill can also be used as spicing."],
-      zh: ["“香料与滋味”技能也可以作为香料使用。"]
+      en: ["* 1. For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone.","2. The Spices & Savours skill can also be used as spicing."],
+      zh: ["* 1. 方便起见，在所有需要面包的菜谱中，本食谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. “香料与滋味”技能也可以作为香料使用。"]
     }
   },
   {
@@ -410,8 +410,8 @@ export const recipes: Recipe[] = [
     type: ["dish"],
     icon: "apple_pie.png",
     note: {
-      en: ["The Spices & Savours skill can also be used as spicing."],
-      zh: ["“香料与滋味”技能也可以作为香料使用。"]
+      en: ["* The Spices & Savours skill can also be used as spicing."],
+      zh: ["* “香料与滋味”技能也可以作为香料使用。"]
     }
   },
   {
@@ -452,8 +452,8 @@ export const recipes: Recipe[] = [
     type: ["dish"],
     icon: "bake_apple_meringue.png",
     note: {
-      en: ["The Spices & Savours skill can also be used as spicing."],
-      zh: ["“香料与滋味”技能也可以作为香料使用。"]
+      en: ["* The Spices & Savours skill can also be used as spicing."],
+      zh: ["* “香料与滋味”技能也可以作为香料使用。"]
     }
   },
   {
@@ -498,9 +498,43 @@ export const recipes: Recipe[] = [
     type: ["dish"],
     icon: "bake_pear_meringue.png",
     note: {
-      en: ["The Spices & Savours skill can also be used as spicing."],
-      zh: ["“香料与滋味”技能也可以作为香料使用。"]
+      en: ["* The Spices & Savours skill can also be used as spicing."],
+      zh: ["* “香料与滋味”技能也可以作为香料使用。"]
     }
+  },
+  {
+    id: "batter",
+    displayName: {
+      en: "Batter",
+      zh: "面糊",
+    },
+    description: {
+      en: "[Add Dripping for something horrifyingly tasty; or use with a Knife and Onions.]",
+      zh: "[添加烤肉滴油以制作某种好吃得惊人的东西；或者用刀将其与洋葱一同处理。]",
+    },
+    requires: [
+      {
+        id: "method 1",
+        requires: ["flour","isle_water"]
+      },
+      {
+        id: "method 2",
+        requires: ["flour","mist_kissed_water"]
+      }
+    ],
+    principles: [
+      {
+        id: "principle.edge",
+        amount: 1,
+      },
+      {
+        id: "principle.heart",
+        amount: 1,
+      }
+    ],
+    serves: ["ingredients"],
+    type: ["ingredients"],
+    icon: "batter.png",
   },
   {
     id: "blackerries",
@@ -523,7 +557,7 @@ export const recipes: Recipe[] = [
         amount: 1,
       },
     ],
-    serves: ["first_course","ingredients"],
+    serves: ["first_course"],
     type: ["dish","ingredients"],
     icon: "blackberries.png",
   },
@@ -637,7 +671,7 @@ export const recipes: Recipe[] = [
         amount: 1,
       }, ],
     serves: ["first_course","ingredients"],
-    type: ["dish"],
+    type: ["dish","ingredients"],
     icon: "boiled_egg.png",
   },
   {
@@ -648,7 +682,7 @@ export const recipes: Recipe[] = [
     },
     description: {
       en: "[Add something sweet like jam - or add Almonds and spices.]",
-      zh: "排列整齐，营养丰富，苍白如十二月的拂晓。",
+      zh: "[加入杏仁，或者果酱之类的甜味剂。]",
     },
     requires: [
       {
@@ -805,7 +839,7 @@ export const recipes: Recipe[] = [
     },
     description: {
       en: "Use bread with a Knife and mushroom, ham, pilchards, or other savoury things... or add apples and spice for a classic English pudding.",
-      zh: "同蘑菇、火腿、沙丁鱼或者其他开胃食材一起烹煮……或者加入苹果和香料来制作一款传统的英国布丁。",
+      zh: "[可以用刀料理面包，同时加上蘑菇、火腿、沙丁鱼或者其他咸味食材……或者加入苹果与香料，制作经典英国甜点。]",
     },
     requires: [
       {
@@ -829,11 +863,41 @@ export const recipes: Recipe[] = [
       {
         id: "principle.nectar",
         amount: 1,
-      },
+      }
     ],
     serves: ["side_dish","ingredients"],
     type: ["dish","ingredients"],
-    icon: "crusty_bread.png",
+    icon: "crusty_bread.png"
+  },
+  {
+    id: "dough",
+    displayName: {
+      en: "Dough",
+      zh: "生面团",
+    },
+    description: {
+      en: "Mix with an egg in a Bowl to make cake batter, or use to bake various delectable pies. For the sweeter pies, you'll want to use spices too.",
+      zh: "[在碗里加鸡蛋搅拌以制作蛋糕面糊，或者用以烤制各种美味的派。若想制作味道更甜的派，就再加些香料。",
+    },
+    requires: [
+      {
+        id: "method 1",
+        requires: ["bottle_milk","flour","kitchen_bowls"]
+      },
+      {
+        id: "method 2",
+        requires: ["butter","flour","kitchen_bowls"]
+      }
+    ],
+    principles: [
+      {
+        id: "principle.heart",
+        amount: 1,
+      }
+    ],
+    serves: ["ingredients"],
+    type: ["ingredients"],
+    icon: "dough.png",
   },
   {
     id: "egg_croquettes",
@@ -877,8 +941,8 @@ export const recipes: Recipe[] = [
     type: ["dish"],
     icon: "egg_croquettes.png",
     note: {
-      en: ["The Pillas-Oat Bread located in Keeper's Lodge can also be used as bread, but it is unique and therefore omitted from the standard recipe."],
-      zh: ["守门人小屋中的小莜麦面包也可作为这里的面包使用，但由于它是唯一物品，因此未列入标准制作路径。"],
+      en: ["* For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone."],
+      zh: ["* 方便起见，在所有需要面包的菜谱中，本食谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。"],
     },
   },
   {
@@ -894,7 +958,7 @@ export const recipes: Recipe[] = [
     requires: [
       {
         id: "method 1",
-        requires: ["crusty_bread","hens_egg","bronze_knife"]
+        requires: ["crusty_bread","hens_egg","knife"]
       }
     ],
     principles: [
@@ -915,8 +979,8 @@ export const recipes: Recipe[] = [
     type: ["dish"],
     icon: "egg_sandwich.png",
     note: {
-      en: ["1. The Pillas-Oat Bread located in Keeper's Lodge can also be used as bread, but it is unique and therefore omitted from the standard recipe.","2. Any object with the aspect of Knife can be used as a knife, but the Bronze Knife is the most practical choice."],
-      zh: ["1. 守门人小屋中的小莜麦面包也可作为这里的面包使用，但由于它是唯一物品，因此未列入标准制作路径。","2. 任何具有刀具属性的物品都可以用作刀具，但青铜刀是最实用的选择……大概吧。"],
+      en: ["* 1. For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone.","2. Any object with the aspect of Knife can be used as a knife. This cookbook uses the Bronze Knife throughout. There are other knives in the Hush House, but perhaps we shouldn't be cooking with weapons."],
+      zh: ["* 1. 方便起见，在所有需要面包的菜谱中，本食谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀使用。本食谱统一采用青铜刀。居屋中有其他的刀，但或许我们不该用武器做饭。"],
     },
   },
   {
@@ -957,8 +1021,8 @@ export const recipes: Recipe[] = [
     type: ["dish"],
     icon: "eggy_bread.png",
     note: {
-      en: ["1. The Pillas-Oat Bread located in Keeper's Lodge can also be used as bread, but it is unique and therefore omitted from the standard recipe.","2. Any object with the aspect of Knife can be used as a knife, but the Bronze Knife is the most practical choice."],
-      zh: ["1. 守门人小屋中的小莜麦面包也可作为这里的面包使用，但由于它是唯一物品，因此未列入标准制作路径。","2. 任何具有刀具属性的物品都可以用作刀具，但青铜刀是最实用的选择……大概吧。"],
+      en: ["* For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone."],
+      zh: ["* 方便起见，在所有需要面包的菜谱中，本食谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。"],
     }, 
   },
   {
@@ -1011,10 +1075,10 @@ export const recipes: Recipe[] = [
     requires: [
       {
         id: "method 1",
-        requires: ["mushrooms","crusty_bread","bronze_knife"],},
+        requires: ["mushrooms","crusty_bread","knife"],},
       {
         id: "method 2",
-        requires: ["pickled_mushrooms","crusty_bread","bronze_knife" ],
+        requires: ["pickled_mushrooms","crusty_bread","knife" ],
       }
     ],
     principles: [
@@ -1039,9 +1103,34 @@ export const recipes: Recipe[] = [
     type: ["dish"],
     icon: "fried_mushrooms_on_toast.png",
     note: {
-      en: ["1. The Pillas-Oat Bread located in Keeper's Lodge can also be used as bread, but it is unique and therefore omitted from the standard recipe.","2. Any object with the aspect of Knife can be used as a knife, but the Bronze Knife is the most practical choice."],
-      zh: ["1. 守门人小屋中的小莜麦面包也可作为这里的面包使用，但由于它是唯一物品，因此未列入标准制作路径。","2. 任何具有刀具属性的物品都可以用作刀具，但青铜刀是最实用的选择……大概吧。"],
+      en: ["* 1. For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone.","2. Any object with the aspect of Knife can be used as a knife. There are other knives in the Hush House, but perhaps we shouldn't be cooking with weapons."],
+      zh: ["* 1. 在所有需要面包的菜谱中，本食谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋中有其他的刀，但或许我们不该用武器做饭。"],
     },
+  },
+  {
+    id: "fudge",
+    displayName: {
+      en: "Fudge",
+      zh: "法奇软糖"
+    },
+    description: {
+      en: "All the bad things doing a good thing.",
+      zh: "祸兮福所倚。"
+    },
+    requires: [
+      {
+        id: "method 1",
+        requires: ["creamed_sugar"],}
+    ],
+    principles: [
+      {
+        id: "principle.grail",
+        amount: 3,
+      }
+    ],
+    serves: ["pudding"],
+    type: ["dish"],
+    icon: "fudge.png",
   },
   {
     id: "game_chips",
@@ -1056,7 +1145,7 @@ export const recipes: Recipe[] = [
     requires: [
       {
         id: "method 1",
-        requires: ["dripping","potatoes","bronze_knife"],
+        requires: ["dripping","potatoes","knife"],
       }
     ],
     principles: [
@@ -1081,8 +1170,8 @@ export const recipes: Recipe[] = [
     type: ["dish"],
     icon: "game_chips.png",
     note: {
-      en: ["Any object with the aspect of Knife can be used as a knife, but the Bronze Knife is the most practical choice."],
-      zh: ["任何具有刀具属性的物品都可以用作刀具，但青铜刀是最实用的选择……大概吧。"],
+      en: ["* Any object with the aspect of Knife can be used as a knife. There are other knives in the Hush House, but perhaps we shouldn't be cooking with weapons."],
+      zh: ["* 任何具有“刀”性向的物品都可作为刀具使用。居屋中有其他的刀，但或许我们不该用武器做饭。"],
     },
   },
   {
@@ -1182,7 +1271,7 @@ export const recipes: Recipe[] = [
     requires: [
       {
         id: "method 1",
-      requires: ["crusty_bread","canned_ham","bronze_knife"]
+      requires: ["crusty_bread","canned_ham","knife"]
       }
     ],
     principles: [
@@ -1202,9 +1291,10 @@ export const recipes: Recipe[] = [
     type: ["dish"],
     icon: "ham_n_cheese_toastie.png",
     note: {
-      en: ["1. The Pillas-Oat Bread located in Keeper's Lodge can also be used as bread, but it is unique and therefore omitted from the standard recipe.","2. Any object with the aspect of Knife can be used as a knife, but the Bronze Knife is the most practical choice."],
-      zh: ["1. 守门人小屋中的小莜麦面包也可作为这里的面包使用，但由于它是唯一物品，因此未列入标准制作路径。","2. 任何具有刀具属性的物品都可以用作刀具，但青铜刀是最实用的选择……大概吧。"],
+      en: ["* 1. For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone.","2. Any object with the aspect of Knife can be used as a knife. There are other knives in the Hush House, but perhaps we shouldn't be cooking with weapons."],
+      zh: ["* 1. 在所有需要面包的菜谱中，本食谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋中有其他的刀，但或许我们不该用武器做饭。"],
     },
+
   },
   {
     id: "ham_n_egg_casserole",
@@ -1332,8 +1422,9 @@ export const recipes: Recipe[] = [
     type: ["dish"],
     icon: "honey_haunted_pumpkin_pie.png",
     note: {
-      en: ["about spicing"],
-      zh: ["关于香料"]}
+      en: ["* The Spices & Savours skill can also be used as spicing."],
+      zh: ["* “香料与滋味”技能也可以作为香料使用。"]
+    }
   },
   {
     id: "honey_haunted_pumpkin_soup",
@@ -1468,11 +1559,11 @@ export const recipes: Recipe[] = [
     id: "kingsluck_pie",
     displayName: {
       en: "Kingsluck Pie",
-      zh: "国王幸运派"
+      zh: "王运派"
     },
     description: {
       en: "Thirza Blake always insisted on calling it 'the Great Pie of Power', to the lasting annoyance of her peers.",
-      zh: "蒂尔扎·布雷克坚持管它叫“权力大馅饼”，搞得她的同僚们一直都很气恼。"
+      zh: "蒂尔扎·布雷克执意称它为“权力大馅饼”，搞得她的同僚们颇为恼火。"
     },
     requires: [
       {
@@ -1520,6 +1611,60 @@ export const recipes: Recipe[] = [
     serves: ["main_course"],
     type: ["dish"],
     icon: "kingsluck_pie.png",
+    note: {
+      en: ["* The Spices & Savours skill can also be used as spicing."],
+      zh: ["* “香料与滋味”技能也可以作为香料使用。"]
+    }
+  },
+  {
+    id: "knot_cake",
+    displayName: {
+      en: "Knot-Cake",
+      zh: "绳结糕",
+    },
+    description: {
+      en: "According to the ancient pattern.",
+      zh: "依古代式样制作。"
+    },
+    requires: [
+      {
+        id: "method 1",
+        requires: ["cake_batter","cuckoo_honey"],
+      }
+    ],
+    principles: [
+      {
+        id: "principle.edge",
+        amount: 2,
+      },
+      {
+        id: "principle.grail",
+        amount: 1,
+      },
+      {
+        id: "principle.heart",
+        amount: 2,
+      },
+      {
+        id: "principle.lantern",
+        amount: 1,
+      },
+      {
+        id: "principle.moth",
+        amount: 3,
+      },
+      {
+        id: "principle.nectar",
+        amount: 2,
+      },
+      {
+        id: "principle.scale",
+        amount: 3,
+      }
+    ],
+    serves: ["pudding"],
+    type: ["dish"],
+    icon: "knot_cake.png",
   },
   {
     id: "leek_gratin",
@@ -1534,7 +1679,7 @@ export const recipes: Recipe[] = [
     requires: [
       {
         id: "method 1",
-        requires: ["basket_leeks","crusty_bread","bronze_knife"],
+        requires: ["basket_leeks","crusty_bread","knife"],
       }
     ],
     principles: [
@@ -1555,8 +1700,8 @@ export const recipes: Recipe[] = [
     type: ["dish"],
     icon: "leek_gratin.png",
     note: {
-      en: ["Any object with the aspect of Knife can be used as a knife, but the Bronze Knife is the most practical choice."],
-      zh: ["任何具有刀性向的物品都可以用作刀，但青铜刀是最实用的选择……大概吧。"],
+      en: ["* 1. For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone.","2. Any object with the aspect of Knife can be used as a knife. There are other knives in the Hush House, but perhaps we shouldn't be cooking with weapons."],
+      zh: ["* 1. 在所有需要面包的菜谱中，本食谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋中有其他的刀，但或许我们不该用武器做饭。"],
     },
   },
   {
@@ -1630,6 +1775,43 @@ export const recipes: Recipe[] = [
     icon: "mackerel_monte_carlo.png",
   },
   {
+    id: "madeira_cake",
+    displayName: {
+      en: "Madeira Cake",
+      zh: "马德拉蛋糕"
+    },
+    description: {
+      en: "In the eighteenth century, one would have a slice of this in the morning with a glass of Madeira - fortified wine from the Madeira islands, volcanic yet lush, rugged yet balmy, bright with the calls of sandpipers and firecrests… this is the twentieth century. We have afternoon tea now. We don't drink fortified wine at ten o'clock in the morning. No more sandpipers. No more firecrests. But the cake's still good. Almonds.",
+      zh: "在十八世纪，人们会在早晨吃一片这蛋糕，搭配来自马德拉群岛的马德拉加度红酒；热烈又浓郁，粗犷又香柔，鲜活的滋味伴着鹬鸟与火冠戴菊的啼鸣……但如今已是二十世纪。现在我们有了下午茶。我们已经不在上午十点喝加度红酒了。不再有什么鹬鸟，什么火冠戴菊。但这蛋糕依旧美味，赞美杏仁。"
+    },
+    requires: [
+      {
+        id: "method 1",
+        requires: ["almonds", "cake_batter","spicing"]
+      }
+    ],
+    principles: [
+      {
+        id: "principle.grail",
+        amount: 1,
+      },
+      {
+        id: "principle.heart",
+        amount: 2,
+      },
+      {
+        id: "principle.lantern",
+        amount: 1,
+      },
+        {
+        id: "principle.moth",
+        amount: 1,
+      }],
+    serves: ["pudding"],
+    type: ["dish"],
+    icon: "madeira_cake.png"
+  },
+  {
     id: "magnificent_roast_potatoes",
     displayName: {
       en: "Magnificent Roast Potatoes",
@@ -1637,7 +1819,7 @@ export const recipes: Recipe[] = [
     },
     description: {
       en: "It's the dripping that elevates it. Roast potatoes are a feast for the senses, but the dripping deepens the flavour profile, makes the experience continue through the machinery of the mouth to become a kind of journey.",
-      zh: "是口水油升华了它。烤土豆已是一场感官盛宴，但这油汁令其风味更加深厚，令其滋味在口腔构造中进一步蔓延，成为一场难忘的旅途。"
+      zh: "是烤肉滴油升华了它。烤土豆已是一场感官盛宴，但这油汁令其风味更加深厚，令其滋味在口腔构造中进一步蔓延，成为一场难忘的旅途。"
     },
     requires: [
       {
@@ -1665,7 +1847,7 @@ export const recipes: Recipe[] = [
       ],
     serves: ["side_dish"],
     type: ["dish"],
-    icon: "magnificent_roast_potatoes.png",
+    icon: "magnificent_roast_potatoes.png"
   },
   {
     id: "marinated_beef_uncooked",
@@ -1774,7 +1956,7 @@ export const recipes: Recipe[] = [
     },
     description: {
       en: "Add to milk for a legendary dessert. Or, with Spicing, add to apples or pears - even to mushrooms, if you're feeling perverse.",
-      zh: "可以加入奶水、苹果、梨子……如果你口味独特的话，蘑菇也行。"
+      zh: "加入奶来做一种传奇的甜点。或者加入香料，以及苹果或者梨子——如果你想更另类些，加蘑菇。"
     },
     requires: [
       {
@@ -1847,8 +2029,37 @@ export const recipes: Recipe[] = [
     type: ["dish"],
     icon: "moly_au_jus.png",
     note: {
-      en: ["The Spices & Savours skill can also be used as spicing."],
-      zh: ["“香料与滋味”技能也可以作为香料使用。"]
+      en: ["* The Spices & Savours skill can also be used as spicing."],
+      zh: ["* “香料与滋味”技能也可以作为香料使用。"]
+    }
+  },
+  {
+    id: "mushroom_meringue",
+    displayName: {
+      en: "Mushroom Meringue",
+      zh: "蘑菇蛋白酥"
+    },
+    description: {
+      en: "What in the Wolf-Divided's most splintered Name hath here been wrought?",
+      zh: "裂分之狼最为破碎的具名者在此处造化何物？"
+    },
+    requires: [
+      {
+        id: "method 1",
+        requires: ["meringue", "mushrooms","spicing"]
+      }
+    ],
+    principles: [
+      {
+        id: "principle.winter",
+        amount: 1,
+      }],
+    serves: ["pudding"],
+    type: ["dish"],
+    icon: "mushroom_meringue.png",
+    note: {
+      en: ["* The Spices & Savours skill can also be used as spicing."],
+      zh: ["* “香料与滋味”技能也可以作为香料使用。"]
     }
   },
   {
@@ -1901,7 +2112,7 @@ export const recipes: Recipe[] = [
     requires: [
       {
         id: "method 1",
-        requires: ["basket_onions", "crusty_bread","bronze_knife"]
+        requires: ["basket_onions", "crusty_bread","knife"]
       }
     ],
     principles: [
@@ -1925,8 +2136,8 @@ export const recipes: Recipe[] = [
     type: ["dish"],
     icon: "onion_gratin.png",
     note: {
-      en: ["about bread and knife"],
-      zh: ["面包和刀的问题"]
+      en: ["* 1. For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone.","2. Any object with the aspect of Knife can be used as a knife. There are other knives in the Hush House, but perhaps we shouldn't be cooking with weapons."],
+      zh: ["* 1. 在所有需要面包的菜谱中，本食谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋中有其他的刀，但或许我们不该用武器做饭。"],
     }
   },
   {
@@ -1937,12 +2148,12 @@ export const recipes: Recipe[] = [
     },
     description: {
       en: "An American import that became popular in England these last few years, improbably, via the pages of Vogue.",
-      zh: "近几年逐渐在英格兰流行的美国舶来品，这股潮流是由《Vogue》引领的，真是难以置信。"
+      zh: "一种近年来通过《Vogue》杂志意外引入英国并风靡的美国舶来品。"
     },
     requires: [
       {
         id: "method 1",
-        requires: ["basket_onions", "batter","bronze_knife"]
+        requires: ["basket_onions", "batter","knife"]
       }
     ],
     principles: [
@@ -1966,8 +2177,8 @@ export const recipes: Recipe[] = [
     type: ["dish"],
     icon: "onion_rings.png",
     note: {
-      en: ["about bread and knife"],
-      zh: ["面包和刀的问题"]
+      en: ["* Any object with the aspect of Knife can be used as a knife. There are other knives in the Hush House, but perhaps we shouldn't be cooking with weapons."],
+      zh: ["* 任何具有“刀”性向的物品都可作为刀具使用。居屋中有其他的刀，但或许我们不该用武器做饭。"],
     }
   },
   {
@@ -2006,6 +2217,48 @@ export const recipes: Recipe[] = [
     serves: ["first_course"],
     type: ["dish"],
     icon: "onion_soup.png",
+  },
+  {
+    id: "orange_jumble",
+    displayName: {
+      en: "Orange Jumble",
+      zh: "橘子甜饼"
+    },
+    description: {
+      en: "'They should be the size of teacup rims, and should curl their crisp edges, faintly pink as the underneath of a young mushroom.' - Lady Jekyll, Kitchen Essays",
+      zh: "“它们应该有茶杯口那么大，那爽脆的边缘还得蜷曲起来，微带粉色，就像幼嫩蘑菇背面的褶皱。”——哲尔基夫人，《厨房杂谈》"
+    },
+    requires: [
+      {
+        id: "method 1",
+        requires: ["almonds", "sugar","spicing"]
+      }
+    ],
+    principles: [
+      {
+        id: "principle.forge",
+        amount: 1,
+      },
+    {
+        id: "principle.grail",
+        amount: 1,
+      },
+    {
+        id: "principle.heart",
+        amount: 2,
+      },
+      {
+        id: "principle.lantern",
+        amount: 1,
+      }
+    ],
+    serves: ["pudding"],
+    type: ["dish"],
+    icon: "orange_jumble.png",
+    note: {
+      en: ["* The Spices & Savours skill can also be used as spicing."],
+      zh: ["* “香料与滋味”技能也可以作为香料使用。"]
+    }
   },
   {
     id: "pear_pie",
@@ -2049,8 +2302,8 @@ export const recipes: Recipe[] = [
     type: ["dish","ingredients"],
     icon: "pear_pie.png",
     note: {
-      en: ["about spicing"],
-      zh: ["关于香料"]
+      en: ["* The Spices & Savours skill can also be used as spicing."],
+      zh: ["* “香料与滋味”技能也可以作为香料使用。"]
     }
   },
   {
@@ -2206,9 +2459,9 @@ export const recipes: Recipe[] = [
     type: ["dish"],
     icon: "pilchards_on_toast.png",
     note: {
-      en: ["The Pillas-Oat Bread located in Keeper's Lodge can also be used as bread, but it is unique and therefore omitted from the standard recipe."],
-      zh: ["守门人小屋中的小莜麦面包也可作为这里的面包使用，但由于它是唯一物品，因此未列入标准制作路径。"],
-    },
+      en: ["* For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone."],
+      zh: ["* 在所有需要面包的菜谱中，本食谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。"],
+    }
   },
   {
     id: "pillas_oat_bread",
@@ -2238,7 +2491,7 @@ export const recipes: Recipe[] = [
         amount: 1,
       },
     ],
-    serves: ["first_course","ingredients"],
+    serves: ["first_course"],
     type: ["dish","ingredients"],
     icon: "pillas_oat_bread.png",
   },
@@ -2259,9 +2512,47 @@ export const recipes: Recipe[] = [
         amount: 1,
       }
     ],
-    serves: ["first_course","ingredients"],
+    serves: ["first_course"],
     type: ["dish","ingredients"],
     icon: "plums.png",
+  },
+  {
+    id: "plum_croutons",
+    displayName: {
+      en: "Plum Croutons",
+      zh: "西梅炸面包丁"
+    },
+    description: {
+      en: "One should never make this with plums that are not ripe enough to eat. One is quite serious.",
+      zh: "任何人都绝不该拿没熟透的梅子做这道菜。这可不是开玩笑。"
+    },
+    requires: [
+      {
+        id: "method 1",
+        requires: ["crusty_bread","plums","knife"]
+      }
+    ],
+    principles: [
+      {
+        id: "principle.grail",
+        amount: 1,
+      },
+      {
+        id: "principle.heart",
+        amount: 2,
+      },
+      {
+        id: "principle.nectar",
+        amount: 1,
+      }
+    ],
+    serves: ["pudding"],
+    type: ["dish"],
+    icon: "plum_croutons.png",
+    note: {
+      en: ["* 1. For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone.","2. Any object with the aspect of Knife can be used as a knife. There are other knives in the Hush House, but perhaps we shouldn't be cooking with weapons."],
+      zh: ["* 1. 在所有需要面包的菜谱中，本食谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋里还有其他的刀，但或许我们不该用武器做饭。"],
+    }
   },
   {
     id: "poached_mackerel",
@@ -2296,6 +2587,120 @@ export const recipes: Recipe[] = [
     icon: "poached_mackerel.png"
   },
   {
+    id: "poire_belle_helene",
+    displayName: {
+      en: "Poire Belle Hélène",
+      zh: "梨海伦"
+    },
+    description: {
+      en: "A sweet dish named (of course) to celebrate Offenbach's 1865 operetta La belle Hélène. Apparently a New York production made an impression on Thirza Blake in her youth…",
+      zh: "这道甜品为庆祝奥芬巴赫的轻歌剧《美丽的海伦》在1865年的首演而得名（毫无疑问）。显然，纽约货给年轻时的蒂尔扎·布雷克留下了深刻印象……"
+    },
+    requires: [
+      {
+        id: "method 1",
+        requires: ["bowl_of_sea_blest_pears"]
+      }
+    ],
+    principles: [
+      {
+        id: "principle.grail",
+        amount: 2,
+      },
+      {
+        id: "principle.heart",
+        amount: 1,
+      },
+      {
+        id: "principle.moon",
+        amount: 1,
+      },
+      {
+        id: "principle.nectar",
+        amount: 1,
+      }
+    ],
+    serves: ["pudding"],
+    type: ["dish"],
+    icon: "poire_belle_helene.png"
+  },
+  {
+    id: "poires_ys",
+    displayName: {
+      en: "Poires Ys",
+      zh: "伊苏之梨"
+    },
+    description: {
+      en: "Like Poire Belle Hélène, except it makes you dream of drowned sunsets.",
+      zh: "恰似梨海伦，只是它会令你梦见淹溺的落日。"
+    },
+    requires: [
+      {
+        id: "method 1",
+        requires: ["pyrus_auricalcinus","spicing"]
+      }
+    ],
+    principles: [
+      {
+        id: "principle.forge",
+        amount: 4,
+      },
+      {
+        id: "principle.grail",
+        amount: 2,
+      },
+      {
+        id: "principle.heart",
+        amount: 1,
+      },
+      {
+        id: "principle.nectar",
+        amount: 4,
+      }
+    ],
+    serves: ["pudding"],
+    type: ["dish"],
+    icon: "poires_ys.png",
+    note: {
+      en: ["* The Spices & Savours skill can also be used as spicing."],
+      zh: ["* “香料与滋味”技能也可以作为香料使用。"]
+    }
+  },
+  {
+    id: "prune_whip",
+    displayName: {
+      en: "Prune Whip",
+      zh: "西梅糕"
+    },
+    description: {
+      en: "Much, much tastier than it sounds.",
+      zh: "比听上去美味得多。"
+    },
+    requires: [
+      {
+        id: "method 1",
+        requires: ["hens_egg","plums","kitchen_bowls"]
+      }
+    ],
+    principles: [
+      {
+        id: "principle.grail",
+        amount: 1,
+      },
+      {
+        id: "principle.heart",
+        amount: 2,
+      },
+      {
+        id: "principle.nectar",
+        amount: 1,
+      }
+    ],
+    serves: ["pudding"],
+    type: ["dish"],
+    icon: "prune_whip.png"
+  },
+  {
     id: "pumpkin_pie",
     displayName: {
       en: "Pumpkin Pie",
@@ -2328,8 +2733,8 @@ export const recipes: Recipe[] = [
     type: ["dish"],
     icon: "pumpkin_pie.png",
     note: {
-      en: ["The Spices & Savours skill can also be used as spicing."],
-      zh: ["“香料与滋味”技能也可以作为香料使用。"]
+      en: ["* The Spices & Savours skill can also be used as spicing."],
+      zh: ["* “香料与滋味”技能也可以作为香料使用。"]
     }
   },
   {
@@ -2501,9 +2906,73 @@ export const recipes: Recipe[] = [
         amount: 1,
       }
     ],
-    serves: ["first_course","ingredients"],
+    serves: ["first_course"],
     type: ["dish","ingredients"],
     icon: "rosehips.png",
+  },
+  {
+    id: "rosehip_jam",
+    displayName: {
+      en: "Rosehip Jam",
+      zh: "玫瑰果酱",
+    },
+    description: {
+      en: "Plucked from wild roses.",
+      zh: "采自野生玫瑰。",
+    },
+    requires: [{
+        id: "method 1",
+        requires: ["rosehips","sugar"]
+      }],
+    principles: [
+      {
+        id: "principle.grail",
+        amount: 1,
+      },
+      {
+        id: "principle.heart",
+        amount: 1,
+      },
+      {
+        id: "principle.scale",
+        amount: 1,
+      },
+      {
+        id: "principle.sky",
+        amount: 1,
+      }
+    ],
+    serves: ["ingredients"],
+    type: ["ingredients"],
+    icon: "rosehip_jam.png"
+  },
+  {
+    id: "rosehip_sponge_cake",
+    displayName: {
+      en: "Rosehip Sponge Cake",
+      zh: "玫瑰果海绵蛋糕",
+    },
+    description: {
+      en: "Rosa rugosa, the beach rose, is often regarded as a foreign interloper on European shores, but this cake is a strong argument for our hospitality.",
+      zh: "Rosa rugosa——濒海玫瑰在欧洲的沿海地区常被视为外来入侵物种，但这块蛋糕是我们殷勤好客的有力证明。",
+    },
+    requires: [{
+        id: "method 1",
+        requires: ["cake_batter","rosehip_jam"]
+      }],
+    principles: [
+      {
+        id: "principle.heart",
+        amount: 2,
+      },
+      {
+        id: "principle.rose",
+        amount: 1,
+      }
+    ],
+    serves: ["pudding"],
+    type: ["dish"],
+    icon: "rosehip_sponge_cake.png"
   },
   {
     id: "scrambled_egg",
@@ -2545,11 +3014,11 @@ export const recipes: Recipe[] = [
     id: "sea_pie",
     displayName: {
       en: "Sea-Pie",
-      zh: "海馅饼",
+      zh: "海味派",
     },
     description: {
       en: "Once a treat for sailors, hence the name. [With the Spices and Savours skill, and pears, you might recreate a legendary dish.]",
-      zh: "曾是对水手们的犒赏，故此得名。[搭配香料与滋味之技艺，以及梨子，你或许可以重现一道声名远扬的美食。]",
+      zh: "曾是对水手们的犒赏，故此得名。[搭配香料与滋味之技艺，以及梨子，你或许可以重现一道传说中的菜肴。]",
     },
     requires: [{
         id: "method 1",
@@ -2690,7 +3159,7 @@ export const recipes: Recipe[] = [
     },
     requires: [{
         id: "method 1",
-        requires: ["acrid_marrow","bronze_knife"]
+        requires: ["acrid_marrow","knife"]
       }],
     principles: [
       {
@@ -2708,7 +3177,11 @@ export const recipes: Recipe[] = [
     ],
     serves: ["first_course","main_course"],
     type: ["dish"],
-    icon: "stuffed_acrid_marrow.png"
+    icon: "stuffed_acrid_marrow.png",
+    note: {
+      en: ["* Any object with the aspect of Knife can be used as a knife. There are other knives in the Hush House, but perhaps we shouldn't be cooking with weapons."],
+      zh: ["* 任何具有“刀”性向的物品都可作为刀具使用。居屋里还有其他的刀，但或许我们不该用武器做饭。"],
+    }
   },
   {
     id: "stuffed_dark_marrow",
@@ -2722,7 +3195,7 @@ export const recipes: Recipe[] = [
     },
     requires: [{
         id: "method 1",
-        requires: ["dark_marrow","bronze_knife"]
+        requires: ["dark_marrow","knife"]
       }],
     principles: [
       {
@@ -2740,7 +3213,11 @@ export const recipes: Recipe[] = [
     ],
     serves: ["first_course","main_course"],
     type: ["dish"],
-    icon: "stuffed_dark_marrow.png"
+    icon: "stuffed_dark_marrow.png",
+    note: {
+      en: ["* Any object with the aspect of Knife can be used as a knife. There are other knives in the Hush House, but perhaps we shouldn't be cooking with weapons."],
+      zh: ["* 任何具有“刀”性向的物品都可作为刀具使用。居屋里还有其他的刀，但或许我们不该用武器做饭。"],
+    }
   },
   {
     id: "stuffed_golden_marrow",
@@ -2754,7 +3231,7 @@ export const recipes: Recipe[] = [
     },
     requires: [{
         id: "method 1",
-        requires: ["golden_marrow","bronze_knife"]
+        requires: ["golden_marrow","knife"]
       }],
     principles: [
       {
@@ -2772,7 +3249,11 @@ export const recipes: Recipe[] = [
     ],
     serves: ["first_course","main_course"],
     type: ["dish"],
-    icon: "stuffed_golden_marrow.png"
+    icon: "stuffed_golden_marrow.png",
+    note: {
+      en: ["* Any object with the aspect of Knife can be used as a knife. There are other knives in the Hush House, but perhaps we shouldn't be cooking with weapons."],
+      zh: ["* 任何具有“刀”性向的物品都可作为刀具使用。居屋里还有其他的刀，但或许我们不该用武器做饭。"],
+    }
   },
   {
     id: "stuffed_pale_marrow",
@@ -2786,7 +3267,7 @@ export const recipes: Recipe[] = [
     },
     requires: [{
         id: "method 1",
-        requires: ["pale_marrow","bronze_knife"]
+        requires: ["pale_marrow","knife"]
       }],
     principles: [
       {
@@ -2804,7 +3285,45 @@ export const recipes: Recipe[] = [
     ],
     serves: ["first_course","main_course"],
     type: ["dish"],
-    icon: "stuffed_pale_marrow.png"
+    icon: "stuffed_pale_marrow.png",
+    note: {
+      en: ["* Any object with the aspect of Knife can be used as a knife. There are other knives in the Hush House, but perhaps we shouldn't be cooking with weapons."],
+      zh: ["* 任何具有“刀”性向的物品都可作为刀具使用。居屋里还有其他的刀，但或许我们不该用武器做饭。"],
+    }
+
+  },
+  {
+    id: "toffee_pudding",
+    displayName: {
+      en: "Toffee Pudding",
+      zh: "太妃糖布丁",
+    },
+    description: {
+      en: "Decadent in summer, comforting in winter.",
+      zh: "夏日的放纵，冬季的抚慰。",
+    },
+    requires: [{
+        id: "method 1",
+        requires: ["crusty_bread","creamed_sugar"]
+      }],
+    principles: [
+      {
+        id: "principle.grail",
+        amount: 2,
+      },
+      {
+        id: "principle.heart",
+        amount: 2,
+      }
+    ],
+    serves: ["pudding"],
+    type: ["dish"],
+    icon: "toffee_pudding.png",
+    note: {
+      en: ["* For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone."],
+      zh: ["* 在所有需要面包的菜谱中，本食谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。"],
+    },
+
   },
   {
     id: "vegetable_stew",
@@ -2842,6 +3361,50 @@ export const recipes: Recipe[] = [
     serves: ["main_course"],
     type: ["dish"],
     icon: "vegetable_stew.png"
+  },
+  {
+    id: "walls_of_ys",
+    displayName: {
+      en: "Walls-of-Ys",
+      zh: "伊苏之墙",
+    },
+    description: {
+      en: "A frankly insensitive name that commemorates the inundation of that fabled city.",
+      zh: "坦率地说，这是一个相当无情的名字，用以纪念那座传说之城的沉没。",
+    },
+    requires: [{
+        id: "method 1",
+        requires: ["meringue","pyrus_auricalcinus","spicing"]
+      }],
+    principles: [
+      {
+        id: "principle.forge",
+        amount: 4,
+      },
+      {
+        id: "principle.grail",
+        amount: 2,
+      },
+      {
+        id: "principle.knock",
+        amount: 2,
+      },
+      {
+        id: "principle.nectar",
+        amount: 4,
+      },
+      {
+        id: "principle.winter",
+        amount: 1,
+      }
+    ],
+    serves: ["pudding"],
+    type: ["dish"],
+    icon: "walls_of_ys.png",
+    note: {
+      en: ["* The Spices & Savours skill can also be used as spicing."],
+      zh: ["* “香料与滋味”技能也可以作为香料使用。"]
+    }
   },
   {
     id: "yorkshire_pudding",

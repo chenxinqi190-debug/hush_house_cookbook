@@ -1,18 +1,22 @@
 "use client";
 
 import { ReactNode, useEffect } from "react";
+import { Language, translations } from "@/data/i18n";
 
 interface MobileDrawerProps {
   isOpen: boolean;
   onClose: () => void;
   children: ReactNode;
+  language: Language;
 }
 
 export default function MobileDrawer({
   isOpen,
   onClose,
   children,
+  language,
 }: MobileDrawerProps) {
+  const t = translations[language];
   // Prevent background scroll while the drawer is open.
   useEffect(() => {
     if (isOpen) {
@@ -50,10 +54,10 @@ export default function MobileDrawer({
           <button
             type="button"
             onClick={onClose}
-            aria-label="Close menu"
+            aria-label={t.closeMenu}
             className="rounded-md px-3 py-1 text-sm text-ink/60 hover:text-ink"
           >
-            Close
+            {t.close}
           </button>
         </div>
         <div className="h-[calc(100%-44px)]">{children}</div>

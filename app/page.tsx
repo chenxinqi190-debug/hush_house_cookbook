@@ -6,7 +6,8 @@ import { recipes as recipeData } from "@/data/recipes";
 import Sidebar from "@/components/Sidebar";
 import MobileDrawer from "@/components/MobileDrawer";
 import RecipeDetail from "@/components/RecipeDetail";
-import { Language } from "@/data/i18n";
+import { Language, translations } from "@/data/i18n";
+import Link from "next/link";
 
 export default function Home() {
   // In this iteration the data source is the mock array. Later this can be
@@ -19,6 +20,7 @@ export default function Home() {
     null
   );
   const [language, setLanguage] = useState<Language>("en");
+  const t = translations[language];
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   useEffect(() => {
@@ -114,7 +116,7 @@ if (!isMounted) {
       </aside>
 
       {/* Mobile slide-in drawer */}
-      <MobileDrawer isOpen={isDrawerOpen} onClose={() => setIsDrawerOpen(false)}>
+      <MobileDrawer isOpen={isDrawerOpen} onClose={() => setIsDrawerOpen(false)} language={language} >
         <Sidebar {...sidebarProps} />
       </MobileDrawer>
 
@@ -127,16 +129,22 @@ if (!isMounted) {
             aria-label="Open recipe list"
             className="rounded-md border border-ink/20 px-3 py-1 text-sm text-ink/80"
           >
-            ☰ Recipes
+            ☰ {t.recipes}
           </button>
           <span className="text-sm text-ink/70">
             {selectedRecipe ? selectedRecipe.displayName[language] : "Hush House Cookbook"}
           </span>
         </div>
-        <LanguageSwitcher
-    language={language}
-    onChange={setLanguage}
-  />
+        <div className="flex items-center justify-end gap-3 px-8 pt-4">
+  <LanguageSwitcher language={language} onChange={setLanguage} />
+
+  <Link
+    href="/about"
+    className="text-lg text-in/80 transition-colors hover:text-ink"
+  >
+    {t.about}
+  </Link>
+</div>
 
         <RecipeDetail recipe={selectedRecipe} recipes={recipes} language={language} />
       </main>

@@ -10,6 +10,9 @@ interface RecipeDetailProps {
   recipes: Recipe[];
   language: Language;
 }
+function hasCraftingRequires(recipe: Recipe) {
+  return recipe.requires.some((method) => method.requires.length > 0);
+}
 function RequiresList({
   recipe,
   recipes,
@@ -35,23 +38,47 @@ const textClass =
 
   return (
     <div className="mt-2 flex flex-wrap gap-4">
-      {recipe.requires.map((method) => (
+      {recipe.requires.map((method,index) => (
         <div
           key={method.id}
-          className="min-w-[130px] border-r border-ink/10 pr-4 last:border-r-0"
+          className="relative min-w-[130px] border-r border-ink/10 pr-4 last:border-r-0"
         >
+          {index < recipe.requires.length - 1 && (
+  <div
+    className="
+      absolute
+      -right-0
+      top-1/2
+      translate-x-1/2
+      -translate-y-1/2
+      flex
+      flex-col
+      items-center
+      bg-parchment
+      px-1
+    "
+  >
+    <div className="h-2 border-l border-ink/10" />
+        <span className="text-[10px] font-semibold text-ink/50 leading-none">
+          OR
+        </span>
+        <div className="h-2 border-l border-ink/10" />
+      </div>
+    )}
           {method.requires.map((ingredientId) => {
             const item = items[ingredientId];
             const childRecipe = recipes.find((r) => r.id === ingredientId);
+            const canExpandChildRecipe =
+  childRecipe !== undefined && hasCraftingRequires(childRecipe);
             const isOpen = openIds.has(`${method.id}:${ingredientId}`);
 
             return (
               <div key={ingredientId} className="mb-4">
                 <button
                   type="button"
-                  disabled={!childRecipe}
+                  disabled={!canExpandChildRecipe}
                   onClick={() => {
-                    if (!childRecipe) return;
+                    if (!canExpandChildRecipe) return;
 
                     const key = `${method.id}:${ingredientId}`;
 
@@ -63,7 +90,7 @@ const textClass =
                     });
                   }}
                   className={`w-28 flex flex-col ${
-  childRecipe
+  canExpandChildRecipe
     ? "cursor-pointer"
     : "cursor-default"
 }`}
@@ -75,15 +102,15 @@ const textClass =
                   />
                   <span className={`mt-1 text-middle ${textClass}`}>{item.displayName[language]}</span>
 
-                  {childRecipe && (
-                    <span className="mt-1 text-xs text-ink/60 hover:text-ink"
+                  {canExpandChildRecipe && (
+                    <span className="mt-1 text-sm text-ink/60 hover:text-ink"
                     >
                       {isOpen ? t.closeRecipe : t.openRecipe}
                     </span>
                   )}
                 </button>
 
-                {childRecipe && isOpen && (
+                {canExpandChildRecipe && isOpen && (
                   <div className="mt-4 border-l border-ink/10 pl-6">
                     <RequiresList
                       recipe={childRecipe}
@@ -114,7 +141,7 @@ export default function RecipeDetail({ recipe, recipes, language }: RecipeDetail
   }
 
   return (
-    <article className="w-full max-w-4xl px-8 pt-6 pb-14 md:ml-20">
+    <article className="w-full max-w-6xl px-8 pt-6 pb-14 md:ml-20">
       {/* Category */}
       <p className="text-lg uppercase tracking-[0.2em] text-ink/80">
         {recipe.serves
