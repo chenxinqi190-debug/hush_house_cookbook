@@ -46,7 +46,7 @@ export const items: Record<string, Item> = {
     id: "amber_pumpkin",
     displayName: {
       en: "Amber Pumpkin",
-      zh: "珀色南瓜",
+      zh: "琥珀南瓜",
     },
     icon: "amber_pumpkin.png",
   },
@@ -126,7 +126,7 @@ export const items: Record<string, Item> = {
     id: "boiled_egg",
     displayName: {
       en: "Boiled Egg",
-      zh: "煮鸡蛋",
+      zh: "白煮蛋",
     },
     icon: "boiled_egg.png",
   },
@@ -494,7 +494,7 @@ export const items: Record<string, Item> = {
   id: "sea_pie",
   displayName: {
     en: "Sea Pie",
-    zh: "海馅饼"
+    zh: "海味派"
   },
   icon: "sea_pie.png",
 },
@@ -510,7 +510,7 @@ export const items: Record<string, Item> = {
   id: "soft_amber_pumpkin",
   displayName: {
     en: "Soft Amber Pumpkin",
-    zh: "柔嫩珀色南瓜"
+    zh: "柔嫩琥珀南瓜"
   },
   icon: "soft_amber_pumpkin.png",
 },

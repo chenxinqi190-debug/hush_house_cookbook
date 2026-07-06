@@ -8,7 +8,7 @@ export const recipes: Recipe[] = [
     },
     description: {
       en: "Always served cold - more accurate to say 'inevitably served cold'.",
-      zh: "总是冷饮——准确来说，“只能是冷饮”。",
+      zh: "常供冷饮——准确地说，“仅供冷饮”。",
     },
     requires: [
       {
@@ -258,7 +258,7 @@ export const recipes: Recipe[] = [
     id: "amber_pumpkin_pie",
     displayName: {
       en: "Amber Pumpkin Pie",
-      zh: "珀色南瓜派",
+      zh: "琥珀南瓜派",
     },
     description: {
       en: "A favourite of Kitty Mazarine's second son. Of course she had to leave them behind in the place of her birth, but she brought the recipe to Brancrug. Did she remember him each time she baked it? Even until the very end?",
@@ -296,7 +296,7 @@ export const recipes: Recipe[] = [
     id: "amber_pumpkin_soup",
     displayName: {
       en: "Amber Pumpkin Soup",
-      zh: "珀色南瓜汤",
+      zh: "琥珀南瓜汤",
     },
     description: {
       en: "The amber 'pompions' of Brancrug are, according to tradition, all descendants of the seeds brought by Kitty Mazarine from her home across the soft sea.",
@@ -369,7 +369,7 @@ export const recipes: Recipe[] = [
     icon: "apple_charlotte.png",
     note: {
       en: ["* 1. For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone.","2. The Spices & Savours skill can also be used as spicing."],
-      zh: ["* 1. 方便起见，在所有需要面包的菜谱中，本食谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. “香料与滋味”技能也可以作为香料使用。"]
+      zh: ["* 1. 方便起见，在所有需要面包的菜谱中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. “香料与滋味”技能也可以作为香料使用。"]
     }
   },
   {
@@ -942,7 +942,7 @@ export const recipes: Recipe[] = [
     icon: "egg_croquettes.png",
     note: {
       en: ["* For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone."],
-      zh: ["* 方便起见，在所有需要面包的菜谱中，本食谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。"],
+      zh: ["* 方便起见，在所有需要面包的菜谱中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。"],
     },
   },
   {
@@ -953,7 +953,7 @@ export const recipes: Recipe[] = [
     },
     description: {
       en: "Ennobled by cress but acceptable without.",
-      zh: "因水芹而显高贵。没有亦无妨。",
+      zh: "加些水芹更显高雅，没有亦无妨。",
     },
     requires: [
       {
@@ -980,7 +980,7 @@ export const recipes: Recipe[] = [
     icon: "egg_sandwich.png",
     note: {
       en: ["* 1. For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone.","2. Any object with the aspect of Knife can be used as a knife. This cookbook uses the Bronze Knife throughout. There are other knives in the Hush House, but perhaps we shouldn't be cooking with weapons."],
-      zh: ["* 1. 方便起见，在所有需要面包的菜谱中，本食谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀使用。本食谱统一采用青铜刀。居屋中有其他的刀，但或许我们不该用武器做饭。"],
+      zh: ["* 1. 方便起见，在所有需要面包的菜谱中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀使用。本菜谱统一采用青铜刀。居屋中有其他的刀，但或许我们不该用武器做饭。"],
     },
   },
   {
@@ -1022,7 +1022,7 @@ export const recipes: Recipe[] = [
     icon: "eggy_bread.png",
     note: {
       en: ["* For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone."],
-      zh: ["* 方便起见，在所有需要面包的菜谱中，本食谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。"],
+      zh: ["* 方便起见，在所有需要面包的菜谱中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。"],
     }, 
   },
   {
@@ -1104,7 +1104,7 @@ export const recipes: Recipe[] = [
     icon: "fried_mushrooms_on_toast.png",
     note: {
       en: ["* 1. For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone.","2. Any object with the aspect of Knife can be used as a knife. There are other knives in the Hush House, but perhaps we shouldn't be cooking with weapons."],
-      zh: ["* 1. 在所有需要面包的菜谱中，本食谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋中有其他的刀，但或许我们不该用武器做饭。"],
+      zh: ["* 1. 在所有需要面包的菜谱中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋中有其他的刀，但或许我们不该用武器做饭。"],
     },
   },
   {
@@ -1292,7 +1292,7 @@ export const recipes: Recipe[] = [
     icon: "ham_n_cheese_toastie.png",
     note: {
       en: ["* 1. For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone.","2. Any object with the aspect of Knife can be used as a knife. There are other knives in the Hush House, but perhaps we shouldn't be cooking with weapons."],
-      zh: ["* 1. 在所有需要面包的菜谱中，本食谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋中有其他的刀，但或许我们不该用武器做饭。"],
+      zh: ["* 1. 在所有需要面包的菜谱中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋中有其他的刀，但或许我们不该用武器做饭。"],
     },
 
   },
@@ -1701,7 +1701,7 @@ export const recipes: Recipe[] = [
     icon: "leek_gratin.png",
     note: {
       en: ["* 1. For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone.","2. Any object with the aspect of Knife can be used as a knife. There are other knives in the Hush House, but perhaps we shouldn't be cooking with weapons."],
-      zh: ["* 1. 在所有需要面包的菜谱中，本食谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋中有其他的刀，但或许我们不该用武器做饭。"],
+      zh: ["* 1. 在所有需要面包的菜谱中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋中有其他的刀，但或许我们不该用武器做饭。"],
     },
   },
   {
@@ -1992,11 +1992,11 @@ export const recipes: Recipe[] = [
     id: "moly_au_jus",
     displayName: {
       en: "Moly au Jus",
-      zh: "原汁摩吕"
+      zh: "蘸汁摩吕"
     },
     description: {
       en: "This has been called 'Moth, but delicious, but perhaps we all will be, at the end.'",
-      zh: "它曾被评价“像蛾子，但很美味，不过也许我们最后，都会如此。”"
+      zh: "它曾被评价为：“似蛾味美，终或同归。”"
     },
     requires: [
       {
@@ -2137,7 +2137,7 @@ export const recipes: Recipe[] = [
     icon: "onion_gratin.png",
     note: {
       en: ["* 1. For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone.","2. Any object with the aspect of Knife can be used as a knife. There are other knives in the Hush House, but perhaps we shouldn't be cooking with weapons."],
-      zh: ["* 1. 在所有需要面包的菜谱中，本食谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋中有其他的刀，但或许我们不该用武器做饭。"],
+      zh: ["* 1. 在所有需要面包的菜谱中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋中有其他的刀，但或许我们不该用武器做饭。"],
     }
   },
   {
@@ -2460,7 +2460,7 @@ export const recipes: Recipe[] = [
     icon: "pilchards_on_toast.png",
     note: {
       en: ["* For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone."],
-      zh: ["* 在所有需要面包的菜谱中，本食谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。"],
+      zh: ["* 在所有需要面包的菜谱中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。"],
     }
   },
   {
@@ -2551,7 +2551,7 @@ export const recipes: Recipe[] = [
     icon: "plum_croutons.png",
     note: {
       en: ["* 1. For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone.","2. Any object with the aspect of Knife can be used as a knife. There are other knives in the Hush House, but perhaps we shouldn't be cooking with weapons."],
-      zh: ["* 1. 在所有需要面包的菜谱中，本食谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋里还有其他的刀，但或许我们不该用武器做饭。"],
+      zh: ["* 1. 在所有需要面包的菜谱中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋里还有其他的刀，但或许我们不该用武器做饭。"],
     }
   },
   {
@@ -3321,7 +3321,7 @@ export const recipes: Recipe[] = [
     icon: "toffee_pudding.png",
     note: {
       en: ["* For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone."],
-      zh: ["* 在所有需要面包的菜谱中，本食谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。"],
+      zh: ["* 在所有需要面包的菜谱中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。"],
     },
 
   },

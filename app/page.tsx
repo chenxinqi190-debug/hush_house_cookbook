@@ -109,7 +109,10 @@ if (!isMounted) {
   return null;
 }
   return (
-    <div className="bg-parchment flex h-screen overflow-hidden text-ink">
+    <div className={`${
+    language === "zh" ? "font-zh" : "font-en"
+  } bg-parchment flex h-screen overflow-hidden text-ink`}
+>
       {/* Desktop sidebar */}
       <aside className="hidden md:block md:w-[400px] md:flex-shrink-0 border-r border-ink/10">
         <Sidebar {...sidebarProps} />

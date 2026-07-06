@@ -27,8 +27,8 @@ export const translations = {
   },
   zh: {
     about: "关于",
-    backToArchive: "返回食谱",
-    archiveTitle: "噤声居屋食谱",
+    backToArchive: "返回菜谱",
+    archiveTitle: "噤声居屋菜谱",
     search: "今天制作什么？",
     start: "不知道要做什么的话，可以看看左边的菜谱。",
     principles: "准则",
