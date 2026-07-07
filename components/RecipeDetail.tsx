@@ -136,8 +136,8 @@ export default function RecipeDetail({ recipe, recipes, language }: RecipeDetail
   const t = translations[language];
   if (!recipe) {
     return (
-      <div className="flex h-full items-center justify-center pt-22 pl-4 pr-4">
-        <p className="whitespace-pre-line text-3xl italic text-ink/80 ">
+      <div className="flex justify-center px-4 pt-20 md:h-full md:items-center md:pt-0">
+        <p className="whitespace-pre-line text-3xl italic text-ink/80">
           {t.start}
         </p>
       </div>
