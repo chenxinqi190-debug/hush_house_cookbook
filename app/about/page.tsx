@@ -10,7 +10,7 @@ export default function AboutPage() {
       >
         ← Return to the Cookbook
       </Link>
-      <h1 className="mb-8 text-4xl">Notes from an Anonymous Librarian</h1>
+      <h1 className="mb-8 text-4xl">About</h1>
 
       <section className="mb-10">
         <h2 className="mb-3 text-xl font-semibold">Project</h2>
@@ -18,6 +18,14 @@ export default function AboutPage() {
           Hush House Cookbook is an unofficial fan-made recipe archive for
           Book of Hours and its DLC "House of Light".
         </p>
+      </section>
+
+      <section className="mb-10">
+        <h2 className="mb-3 text-xl font-semibold">Contact the Librarian who made this</h2>
+        <ul className="space-y-2">
+          <li>burnikodoesntburn @ tumblr</li>
+          <li>阿铙铙纸 @ rednote</li>
+        </ul>
       </section>
 
       <section className="mb-10">

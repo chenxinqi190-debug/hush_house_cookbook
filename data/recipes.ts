@@ -515,11 +515,11 @@ export const recipes: Recipe[] = [
     requires: [
       {
         id: "method 1",
-        requires: ["flour","isle_water"]
+        requires: ["flour","isle_water","kitchen_bowls"]
       },
       {
         id: "method 2",
-        requires: ["flour","mist_kissed_water"]
+        requires: ["flour","mist_kissed_water","kitchen_bowls"]
       }
     ],
     principles: [
@@ -818,7 +818,7 @@ export const recipes: Recipe[] = [
     requires: [
       {
         id: "method 1",
-        requires: ["butter","kitchen_bowls","sugar"]
+        requires: ["butter","sugar","kitchen_bowls"]
       }
     ],
     principles: [
@@ -2798,7 +2798,7 @@ export const recipes: Recipe[] = [
       },
       {
         id: "principle.scale",
-        amount: 1,
+        amount: 2,
       }
     ],
     serves: ["main_course","ingredients"],

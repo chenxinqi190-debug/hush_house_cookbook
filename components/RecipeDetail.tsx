@@ -3,7 +3,7 @@
 import { Recipe, SERVES_LABELS } from "@/types/recipe";
 import { items } from "@/data/items";
 import { Language, translations } from "@/data/i18n";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 interface RecipeDetailProps {
   recipe: Recipe | null;
@@ -26,6 +26,10 @@ function RequiresList({
 }) {
   const t = translations[language];
   const [openIds, setOpenIds] = useState<Set<string>>(new Set());
+   useEffect(() => {
+    setOpenIds(new Set());
+  }, [recipe.id]);
+
   const iconClass =
   level === 0
     ? "max-h-20 max-w-20"
@@ -133,7 +137,7 @@ export default function RecipeDetail({ recipe, recipes, language }: RecipeDetail
   if (!recipe) {
     return (
       <div className="flex h-full items-center justify-center pt-22 pl-4 pr-4">
-        <p className="text-3xl italic text-ink/80">
+        <p className="whitespace-pre-line text-3xl italic text-ink/80 ">
           {t.start}
         </p>
       </div>
