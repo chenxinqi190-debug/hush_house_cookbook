@@ -46,7 +46,7 @@ export const items: Record<string, Item> = {
     id: "amber_pumpkin",
     displayName: {
       en: "Amber Pumpkin",
-      zh: "琥珀南瓜",
+      zh: "珀色南瓜",
     },
     icon: "amber_pumpkin.png",
   },
@@ -222,7 +222,7 @@ export const items: Record<string, Item> = {
     id: "dark_marrow",
     displayName: {
       en: "Dark Marrow", 
-      zh: "黯西葫芦",
+      zh: "深色西葫芦",
     },
     icon: "dark_marrow.png",
   },
@@ -262,7 +262,7 @@ export const items: Record<string, Item> = {
     id: "golden_marrow",
     displayName: {
       en: "Golden Marrow", 
-      zh: "金黄西葫芦",
+      zh: "金西葫芦",
     },
     icon: "golden_marrow.png",
   },
@@ -326,7 +326,7 @@ export const items: Record<string, Item> = {
     id: "marinated_beef_uncooked",
     displayName: {
       en: "Marinated Beef (Uncooked)",
-      zh: "渍牛肉（未烹饪的）",
+      zh: "腌牛肉（未烹饪的）",
     },
     icon: "marinated_beef_uncooked.png",
   },
@@ -510,7 +510,7 @@ export const items: Record<string, Item> = {
   id: "soft_amber_pumpkin",
   displayName: {
     en: "Soft Amber Pumpkin",
-    zh: "柔嫩琥珀南瓜"
+    zh: "柔嫩珀色南瓜"
   },
   icon: "soft_amber_pumpkin.png",
 },

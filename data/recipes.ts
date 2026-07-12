@@ -183,11 +183,11 @@ export const recipes: Recipe[] = [
     id: "aglaophotis_souffle",
     displayName: {
       en: "Aglaophotis Soufflé",
-      zh: "阿格劳福提斯花蛋奶酥",
+      zh: "阿格劳福提斯花舒芙蕾",
     },
     description: {
       en: "One of the most deliciously melting incarnations of occult power ever contrived.",
-      zh: "超自然之力有史以来最为美味的人造化身，正在慢慢融化。",
+      zh: "有史以来超自然之力的融化化身中最美味的之一。",
     },
     requires: [
       {
@@ -258,7 +258,7 @@ export const recipes: Recipe[] = [
     id: "amber_pumpkin_pie",
     displayName: {
       en: "Amber Pumpkin Pie",
-      zh: "琥珀南瓜派",
+      zh: "珀色南瓜派",
     },
     description: {
       en: "A favourite of Kitty Mazarine's second son. Of course she had to leave them behind in the place of her birth, but she brought the recipe to Brancrug. Did she remember him each time she baked it? Even until the very end?",
@@ -296,11 +296,11 @@ export const recipes: Recipe[] = [
     id: "amber_pumpkin_soup",
     displayName: {
       en: "Amber Pumpkin Soup",
-      zh: "琥珀南瓜汤",
+      zh: "珀色南瓜汤",
     },
     description: {
       en: "The amber 'pompions' of Brancrug are, according to tradition, all descendants of the seeds brought by Kitty Mazarine from her home across the soft sea.",
-      zh: "按布兰库格传统说法，这些珀色“金瓜”都是凯蒂·马扎林从她和蔼大洋彼岸的家乡带来的种子的后代。",
+      zh: "按布兰库格的传统说法，这些珀色“金瓜”都源自凯蒂·马扎林跨越轻柔之海、自家乡带来的种子。",
     },
     requires: [
       {
@@ -369,7 +369,7 @@ export const recipes: Recipe[] = [
     icon: "apple_charlotte.png",
     note: {
       en: ["* 1. For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone.","2. The Spices & Savours skill can also be used as spicing."],
-      zh: ["* 1. 方便起见，在所有需要面包的菜谱中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. “香料与滋味”技能也可以作为香料使用。"]
+      zh: ["* 1. 方便起见，在所有需要面包的菜肴中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. “香料与滋味”技能也可以作为香料使用。"]
     }
   },
   {
@@ -380,7 +380,7 @@ export const recipes: Recipe[] = [
     },
     description: {
       en: "Flaky, buttery crust; tart-sweet apples with cinnamon and nutmeg.",
-      zh: "涂着黄油的薄脆酥皮，酸甜的苹果果肉，搭配上肉桂和肉豆蔻的香气。",
+      zh: "酥脆的黄油饼皮，酸甜的苹果佐以肉桂和豆蔻。",
     },
     requires: [
       {
@@ -422,7 +422,7 @@ export const recipes: Recipe[] = [
     },
     description: {
       en: "Harvey Hattington, during his convalescence at the House, was so obsessed with meringuing techniques that he was ultimately banned from the kitchen.",
-      zh: "在居屋疗养期间，哈维·哈廷顿迷上了蛋白酥工艺，以至最后被厨房禁止入内。",
+      zh: "在居屋疗养期间，哈维·哈廷顿痴迷于蛋白酥工艺，最终被禁止进入厨房。",
     },
     requires: [
       {
@@ -460,11 +460,11 @@ export const recipes: Recipe[] = [
     id: "bake_pear_meringue",
     displayName: {
       en: "Baked Pear Meringue",
-      zh: "烤梨子蛋白酥",
+      zh: "烤梨蛋白酥",
     },
     description: {
       en: "Harvey Hattington, during his convalescence at the House, became obsessed with meringuing techniques. He was known to sneak down to the kitchens and interfere with the cooks in pursuit of his ideal.",
-      zh: "在居屋疗养期间，哈维·哈廷顿迷上了蛋白酥工艺。他是出了名地喜欢溜到下边的厨房里，为了自己的荒诞想法打搅厨师们。",
+      zh: "在居屋疗养期间，哈维·哈廷顿痴迷于蛋白酥工艺。他常常偷溜进厨房，干预厨师的工作，以追求他心中的理想蛋白酥。",
     },
     requires: [
       {
@@ -544,7 +544,7 @@ export const recipes: Recipe[] = [
     },
     description: {
       en: "Berries promised by darkness.",
-      zh: "黑暗应许的莓果。",
+      zh: "黑暗许诺的浆果。",
     },
     requires: [],
     principles: [
@@ -607,7 +607,7 @@ export const recipes: Recipe[] = [
     },
     description: {
       en: "Light, sweet sponge cake and the taste of autumn hedgerows.",
-      zh: "轻盈而甜美的海绵蛋糕，秋日树篱般的味道。",
+      zh: "轻盈而甜美的海绵蛋糕，伴着仿佛刚撷自秋日树篱般的新鲜滋味。",
     },
     requires: [
       {
@@ -645,7 +645,7 @@ export const recipes: Recipe[] = [
     },
     description: {
       en: "Neatly packaged nutrition, pale as a December dawn.",
-      zh: "排列整齐，营养丰富，苍白如十二月的拂晓。",
+      zh: "完美包裹的营养品，苍白如十二月的黎明。",
     },
     requires: [
       {
@@ -703,11 +703,11 @@ export const recipes: Recipe[] = [
     id: "cold_pheasant_n_grape_salad",
     displayName: {
       en: "Cold Pheasant and Grape Salad",
-      zh: "葡萄沙拉配冷烤野鸡",
+      zh: "冷切野鸡配葡萄沙拉",
     },
     description: {
       en: "This was the sort of dish you might expect to find for a late supper after the theatre, or halfway through a ball.' - Arabella Boxer",
-      zh: "这就是那种你希望在剧院离场后，舞会中途时的夜宵里能吃到的餐点。”——阿拉贝拉·博克瑟",
+      zh: "“这是那种适合在剧院散场后的夜宵、或舞会中途吃到的菜肴。”——阿拉贝拉·博克瑟",
     },
     requires: [
       {
@@ -903,11 +903,11 @@ export const recipes: Recipe[] = [
     id: "egg_croquettes",
     displayName: {
       en: "Egg Croquettes",
-      zh: "炸蛋丸",
+      zh: "苏格兰蛋",
     },
     description: {
       en: "Come for the crunch, stay for the nourishment.",
-      zh: "为咔哧脆响而来，为滋养你而驻步。",
+      zh: "为酥脆而来，为滋养而留。",
     },
     requires: [
       {
@@ -942,7 +942,7 @@ export const recipes: Recipe[] = [
     icon: "egg_croquettes.png",
     note: {
       en: ["* For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone."],
-      zh: ["* 方便起见，在所有需要面包的菜谱中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。"],
+      zh: ["* 方便起见，在所有需要面包的菜肴中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。"],
     },
   },
   {
@@ -980,18 +980,18 @@ export const recipes: Recipe[] = [
     icon: "egg_sandwich.png",
     note: {
       en: ["* 1. For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone.","2. Any object with the aspect of Knife can be used as a knife. This cookbook uses the Bronze Knife throughout. There are other knives in the Hush House, but perhaps we shouldn't be cooking with weapons."],
-      zh: ["* 1. 方便起见，在所有需要面包的菜谱中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀使用。本菜谱统一采用青铜刀。居屋中有其他的刀，但或许我们不该用武器做饭。"],
+      zh: ["* 1. 方便起见，在所有需要面包的菜肴中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀使用。本菜谱统一采用青铜刀。居屋中有其他的刀，但或许我们不该用武器做饭。"],
     },
   },
   {
     id: "eggy_bread",
     displayName: {
       en: "Eggy Bread",
-      zh: "蛋香吐司",
+      zh: "法国吐司",
     },
     description: {
       en: "On the continent, they call it 'pain perdu': sounds like damnation but tastes like sin.",
-      zh: "在欧洲大陆，人们管这叫“pain perdu”（过期的面包）——听起来像是种诅咒，但它好吃得叫人下地狱。",
+      zh: "在大陆，人们管这叫“pain perdu”（遭弃的面包），听起来很糟糕，吃起来却罪恶般美味。",
     },
     requires: [
       {
@@ -1022,7 +1022,7 @@ export const recipes: Recipe[] = [
     icon: "eggy_bread.png",
     note: {
       en: ["* For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone."],
-      zh: ["* 方便起见，在所有需要面包的菜谱中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。"],
+      zh: ["* 方便起见，在所有需要面包的菜肴中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。"],
     }, 
   },
   {
@@ -1070,7 +1070,7 @@ export const recipes: Recipe[] = [
     },
     description: {
       en: "You can do great things with these with a simple white sauce with black pepper, but sometimes you're just hungry.",
-      zh: "你可以用它们与简简单单的白沙司与黑胡椒搭配出很棒的餐点，但有时你只是饿了而已。"
+      zh: "可以加上简单的白酱和黑胡椒来做出美味佳肴，但有时候你只想要快点充饥。"
     },
     requires: [
       {
@@ -1104,7 +1104,7 @@ export const recipes: Recipe[] = [
     icon: "fried_mushrooms_on_toast.png",
     note: {
       en: ["* 1. For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone.","2. Any object with the aspect of Knife can be used as a knife. There are other knives in the Hush House, but perhaps we shouldn't be cooking with weapons."],
-      zh: ["* 1. 在所有需要面包的菜谱中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋中有其他的刀，但或许我们不该用武器做饭。"],
+      zh: ["* 1. 在所有需要面包的菜肴中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋中有其他的刀，但或许我们不该用武器做饭。"],
     },
   },
   {
@@ -1140,7 +1140,7 @@ export const recipes: Recipe[] = [
     },
     description: {
       en: "Long before fish and chips, these went crunchily with game. Ideally you'd want bread sauce and breadcrumbs to complete the ensemble, but honestly it's hard enough not just to stuff these directly into your mouth.",
-      zh: "早在炸鱼薯条出现前，它们便已同野味一起酥脆登场。在理想条件下，你大概会想再加些面包沙司与干面包屑来完善这道菜，但说真的，不把它们直接塞嘴里就够不容易了。"
+      zh: "炸鱼薯条出现前，薯条就已经被用来搭配野味以凸显其酥脆了。理想情况下，还需要搭配面包酱和面包屑来使这道菜更加完美，但老实说，光是忍住不直接把它们塞进嘴里就已是难事。"
     },
     requires: [
       {
@@ -1232,7 +1232,7 @@ export const recipes: Recipe[] = [
     },
     description: {
       en: "Just enough to fill in the gaps.",
-      zh: "刚好够填饱肚子。"
+      zh: "恰好填补空隙。"
     },
     requires: [
       {
@@ -1292,7 +1292,7 @@ export const recipes: Recipe[] = [
     icon: "ham_n_cheese_toastie.png",
     note: {
       en: ["* 1. For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone.","2. Any object with the aspect of Knife can be used as a knife. There are other knives in the Hush House, but perhaps we shouldn't be cooking with weapons."],
-      zh: ["* 1. 在所有需要面包的菜谱中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋中有其他的刀，但或许我们不该用武器做饭。"],
+      zh: ["* 1. 在所有需要面包的菜肴中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋中有其他的刀，但或许我们不该用武器做饭。"],
     },
 
   },
@@ -1300,7 +1300,7 @@ export const recipes: Recipe[] = [
     id: "ham_n_egg_casserole",
     displayName: {
       en: "Ham and Egg Casserole",
-      zh: "烘蛋饼配火腿"
+      zh: "火腿焗蛋"
     },
     description: {
       en: "Tasty and filling.",
@@ -1342,7 +1342,7 @@ export const recipes: Recipe[] = [
     id: "ham_n_potato_bake",
     displayName: {
       en: "Ham and Potato Bake",
-      zh: "烤土豆配火腿"
+      zh: "火腿烤土豆"
     },
     description: {
       en: "Filling and tasty.",
@@ -1480,7 +1480,7 @@ export const recipes: Recipe[] = [
     id: "jugged_pheasant",
     displayName: {
       en: "Jugged Pheasant",
-      zh: "罐煨野鸡"
+      zh: "罐焖野鸡"
     },
     description: {
       en: "The hunter's reward.",
@@ -1526,11 +1526,11 @@ export const recipes: Recipe[] = [
     id: "kedgeree",
     displayName: {
       en: "Kedgeree",
-      zh: "咖喱烩鱼饭"
+      zh: "英式咖喱鱼饭"
     },
     description: {
       en: "A wonderfully versatile dish favoured for breakfast by the sons of the lark, and for supper by the daughters of the owl.",
-      zh: "一道百搭餐点，百灵之子们最爱的早餐，鸮鸟之女们最爱的夜宵。"
+      zh: "一道百搭的美味餐点，百灵之子的早餐优选，鸮鸟之女的晚宴佳肴。"
     },
     requires: [
       {
@@ -1670,11 +1670,11 @@ export const recipes: Recipe[] = [
     id: "leek_gratin",
     displayName: {
       en: "Leek Gratin",
-      zh: "韭葱奶油烤",
+      zh: "焙烤韭葱",
     },
     description: {
       en: "Harvey Hattington, who established a surprisingly persistent influence on the kitchens of Hush House during his short stay here, described leek as 'Onion's Empress.'",
-      zh: "在噤声居屋停留的短暂期间，哈维·哈廷顿对这里的厨房产生了令人惊讶的持久影响，他将韭葱描述为“洋葱的皇后”。"
+      zh: "哈维·哈廷顿只在噤声居屋停留了短暂时间，却对这里的厨房产生了令人惊讶的持久影响，他将韭葱描述为“洋葱的女皇”。"
     },
     requires: [
       {
@@ -1701,7 +1701,7 @@ export const recipes: Recipe[] = [
     icon: "leek_gratin.png",
     note: {
       en: ["* 1. For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone.","2. Any object with the aspect of Knife can be used as a knife. There are other knives in the Hush House, but perhaps we shouldn't be cooking with weapons."],
-      zh: ["* 1. 在所有需要面包的菜谱中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋中有其他的刀，但或许我们不该用武器做饭。"],
+      zh: ["* 1. 在所有需要面包的菜肴中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋中有其他的刀，但或许我们不该用武器做饭。"],
     },
   },
   {
@@ -1815,11 +1815,11 @@ export const recipes: Recipe[] = [
     id: "magnificent_roast_potatoes",
     displayName: {
       en: "Magnificent Roast Potatoes",
-      zh: "豪华烤土豆"
+      zh: "极致美味烤土豆"
     },
     description: {
       en: "It's the dripping that elevates it. Roast potatoes are a feast for the senses, but the dripping deepens the flavour profile, makes the experience continue through the machinery of the mouth to become a kind of journey.",
-      zh: "是烤肉滴油升华了它。烤土豆已是一场感官盛宴，但这油汁令其风味更加深厚，令其滋味在口腔构造中进一步蔓延，成为一场难忘的旅途。"
+      zh: "烤肉滴油升华了它。烤土豆已是一场感官盛宴，但烤肉滴油加深了风味层次，这体验在口腔中久久回味，成为一段味觉旅程。"
     },
     requires: [
       {
@@ -1853,7 +1853,7 @@ export const recipes: Recipe[] = [
     id: "marinated_beef_uncooked",
     displayName: {
       en: "Marinated Beef (Uncooked)",
-      zh: "渍牛肉（未烹饪的）"
+      zh: "腌牛肉（未烹饪的）"
     },
     description: {
       en: "Tangy with the harbingers of a roastful destiny.",
@@ -1911,7 +1911,7 @@ export const recipes: Recipe[] = [
     id: "marinated_roast_beef",
     displayName: {
       en: "Marinated Roast Beef",
-      zh: "烤渍牛肉"
+      zh: "腌烤牛肉"
     },
     description: {
       en: "But since we have learnt from all-vapouring France / To eat their ragouts as well as to dance, / We're fed up with nothing but vain complaisance / Oh! the Roast Beef of Old England, / And old English Roast Beef! -- Henry Fielding, The Grub Street Opera",
@@ -2103,11 +2103,11 @@ export const recipes: Recipe[] = [
     id: "onion_gratin",
     displayName: {
       en: "Onion Gratin",
-      zh: "洋葱奶油烤"
+      zh: "洋葱烤菜"
     },
     description: {
       en: "Harvey Hattington campaigned for the introduction of this dish to the infirmary during his time convalescing at Hush House, though Wakefield referred to it grumpily as 'Trojan Cheese'.",
-      zh: "在哈维·哈廷顿于噤声居屋疗养期间，他热切的将这道菜引入了医务室。尽管韦克菲尔德提及它时总会生气地称之为“特洛伊奶酪”。"
+      zh: "哈维·哈廷顿在噤声居屋的疗养期间，曾积极将这道菜引进医务室。尽管韦克菲尔德不满地称其为“特洛伊奶酪”。（图管注：沙龙上喂这道菜给韦克菲尔德会让他流泪。）"
     },
     requires: [
       {
@@ -2137,7 +2137,7 @@ export const recipes: Recipe[] = [
     icon: "onion_gratin.png",
     note: {
       en: ["* 1. For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone.","2. Any object with the aspect of Knife can be used as a knife. There are other knives in the Hush House, but perhaps we shouldn't be cooking with weapons."],
-      zh: ["* 1. 在所有需要面包的菜谱中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋中有其他的刀，但或许我们不该用武器做饭。"],
+      zh: ["* 1. 在所有需要面包的菜肴中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋中有其他的刀，但或许我们不该用武器做饭。"],
     }
   },
   {
@@ -2189,7 +2189,7 @@ export const recipes: Recipe[] = [
     },
     description: {
       en: "Just enough tang to tantalise.",
-      zh: "浓郁正好，引人垂涎。"
+      zh: "恰到好处的辛辣味，足以挑动味蕾。"
     },
     requires: [
       {
@@ -2352,7 +2352,7 @@ export const recipes: Recipe[] = [
     },
     description: {
       en: "You'll learn to like them.",
-      zh: "你会学会喜欢它们的。"
+      zh: "你会试着喜欢它们的。"
     },
     requires: [
       {
@@ -2390,7 +2390,7 @@ export const recipes: Recipe[] = [
     },
     description: {
       en: "An acquired, and unforgettable, taste.",
-      zh: "一种俘获来的，且叫人难忘的美味。"
+      zh: "一种独特而难忘的口味。"
     },
     requires: [
       {
@@ -2460,7 +2460,7 @@ export const recipes: Recipe[] = [
     icon: "pilchards_on_toast.png",
     note: {
       en: ["* For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone."],
-      zh: ["* 在所有需要面包的菜谱中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。"],
+      zh: ["* 在所有需要面包的菜肴中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。"],
     }
   },
   {
@@ -2551,7 +2551,7 @@ export const recipes: Recipe[] = [
     icon: "plum_croutons.png",
     note: {
       en: ["* 1. For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone.","2. Any object with the aspect of Knife can be used as a knife. There are other knives in the Hush House, but perhaps we shouldn't be cooking with weapons."],
-      zh: ["* 1. 在所有需要面包的菜谱中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋里还有其他的刀，但或许我们不该用武器做饭。"],
+      zh: ["* 1. 在所有需要面包的菜肴中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。","2. 任何具有“刀”性向的物品都可作为刀具使用。居屋里还有其他的刀，但或许我们不该用武器做饭。"],
     }
   },
   {
@@ -2594,7 +2594,7 @@ export const recipes: Recipe[] = [
     },
     description: {
       en: "A sweet dish named (of course) to celebrate Offenbach's 1865 operetta La belle Hélène. Apparently a New York production made an impression on Thirza Blake in her youth…",
-      zh: "这道甜品为庆祝奥芬巴赫的轻歌剧《美丽的海伦》在1865年的首演而得名（毫无疑问）。显然，纽约货给年轻时的蒂尔扎·布雷克留下了深刻印象……"
+      zh: "毫无疑问，这道甜品为庆祝奥芬巴赫的轻歌剧《美丽的海伦》在1865年的首演而得名。据说，此剧在纽约的演出给年轻时的蒂尔扎·布雷克留下了深刻印象……"
     },
     requires: [
       {
@@ -2708,7 +2708,7 @@ export const recipes: Recipe[] = [
     },
     description: {
       en: "'Take a pound of pumpion and slice it, a handful of thyme, a little rosemary, and sweet marjoram stripped off the stalks, chop them small, then take cinnamon, nutmeg, pepper, and a few cloves all beaten…' - Hannah Woolley, A Gentlewoman's Companion",
-      zh: "“取一磅南瓜切薄片，一把百里香，一点迷迭香，甜墨角兰去梗切小块，然后取肉桂、肉豆蔻、胡椒粉和几瓣丁香，全部打匀……”——汉娜·伍利，《淑女的伴侣》"
+      zh: "“取一磅南瓜切薄片，一把百里香，一点迷迭香，甜牛至去梗，把它们切碎，然后取肉桂、肉豆蔻、胡椒粉和几瓣丁香，全部捣碎……”——汉娜·伍利，《淑女的伴侣》"
     },
     requires: [
       {
@@ -2889,7 +2889,7 @@ export const recipes: Recipe[] = [
     },
     description: {
       en: "Berries that promise roses.",
-      zh: "应许玫瑰的莓果。",
+      zh: "许诺玫瑰的浆果。",
     },
     requires: [],
     principles: [
@@ -3114,7 +3114,7 @@ export const recipes: Recipe[] = [
     },
     description: {
       en: "Originally a product of Lord Berners' kitchens at Faringdon House; favoured by Heber-Percy, 'the Mad Boy', Berners' companion, who inlaid the floor of his changing room with pennies and built steps up to his swimming pool…",
-      zh: "最初是伯纳斯勋爵在法林登庄园厨房里的产物；深受伯纳斯的伴侣“疯小子”希伯-珀西的青睐，此人曾在他更衣室地板上镶嵌便士硬币，还修了条上通游泳池的楼梯……",
+      zh: "最初起源于伯纳斯勋爵在法林顿宅邸的厨房，深受伯纳斯的伴侣“疯小子”希伯·珀西青睐，此人在更衣室的地板上镶嵌硬币，还建造了通往泳池的台阶……",
     },
     requires: [{
         id: "method 1",
@@ -3151,7 +3151,7 @@ export const recipes: Recipe[] = [
     id: "stuffed_acrid_marrow",
     displayName: {
       en: "Stuffed Acrid Marrow",
-      zh: "酿馅苦西葫",
+      zh: "酿馅苦西葫芦",
     },
     description: {
       en: "This was not a marrow conducive to harmony. Now it's a dish for warriors.",
@@ -3187,7 +3187,7 @@ export const recipes: Recipe[] = [
     id: "stuffed_dark_marrow",
     displayName: {
       en: "Stuffed Dark Marrow",
-      zh: "酿馅黯西葫",
+      zh: "酿馅深色西葫芦",
     },
     description: {
       en: "This was a marrow with secrets. Now it's a dish for mystes.",
@@ -3223,7 +3223,7 @@ export const recipes: Recipe[] = [
     id: "stuffed_golden_marrow",
     displayName: {
       en: "Stuffed Golden Marrow",
-      zh: "酿馅金西葫",
+      zh: "酿馅金西葫芦",
     },
     description: {
       en: "This marrow was accounted a beauty among its kind. Now it's a dish for those who understand fidelity.",
@@ -3259,11 +3259,11 @@ export const recipes: Recipe[] = [
     id: "stuffed_pale_marrow",
     displayName: {
       en: "Stuffed Pale Marrow",
-      zh: "酿馅苍西葫",
+      zh: "酿馅苍白西葫芦",
     },
     description: {
       en: "This was a marrow redolent of sorrow. Now it's a dish to comfort the damned.",
-      zh: "它曾能叫人忆起哀痛之事。如今则是安慰罪恶之人的餐点。",
+      zh: "它曾是让人忆起哀痛之事的西葫芦。如今则是安慰罪恶之人的餐点。",
     },
     requires: [{
         id: "method 1",
@@ -3321,7 +3321,7 @@ export const recipes: Recipe[] = [
     icon: "toffee_pudding.png",
     note: {
       en: ["* For simplicity, all recipes that require bread use the craftable Crusty Bread. Let's leave that one precious Pillas Oat-Bread alone."],
-      zh: ["* 在所有需要面包的菜谱中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。"],
+      zh: ["* 在所有需要面包的菜肴中，本菜谱统一采用可制作的硬皮面包。放过那块独一无二的小莜麦面包吧。"],
     },
 
   },
@@ -3329,11 +3329,11 @@ export const recipes: Recipe[] = [
     id: "vegetable_stew",
     displayName: {
       en: "Vegetable Stew",
-      zh: "炖煮蔬菜",
+      zh: "炖蔬菜",
     },
     description: {
       en: "Unexciting, but also unobjectionable.",
-      zh: "无甚新意，但也无人反感。",
+      zh: "平淡无奇，但也无可指摘。",
     },
     requires: [{
         id: "method 1",
@@ -3407,7 +3407,7 @@ export const recipes: Recipe[] = [
     }
   },
   {
-    id: "yorkshire_pudding",
+    id: "fshire_pudding",
     displayName: {
       en: "Yorkshire Pudding",
       zh: "约克郡布丁",
@@ -3432,6 +3432,6 @@ export const recipes: Recipe[] = [
     ],
     serves: ["side_dish"],
     type: ["dish"],
-    icon: "roast_potatoes.png"
+    icon: "yorkshire_pudding.png"
   },
 ]
