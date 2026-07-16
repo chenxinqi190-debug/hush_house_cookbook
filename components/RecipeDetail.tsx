@@ -175,7 +175,7 @@ export default function RecipeDetail({ recipe, recipes, language }: RecipeDetail
       </div>
 
       {/* Description */}
-      <p className="mt-12 text-lg leading-relaxed text-ink">{recipe.description[language]}</p>
+      <p className="whitespace-pre-line mt-12 text-lg leading-relaxed text-ink">{recipe.description[language]}</p>
 
       {/* Principles */}
       <section className="mt-12">

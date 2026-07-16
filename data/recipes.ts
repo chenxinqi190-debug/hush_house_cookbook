@@ -186,8 +186,12 @@ export const recipes: Recipe[] = [
       zh: "阿格劳福提斯花舒芙蕾",
     },
     description: {
-      en: "One of the most deliciously melting incarnations of occult power ever contrived.",
-      zh: "有史以来超自然之力的融化化身中最美味的之一。",
+      en: `One of the most deliciously melting incarnations of occult power ever contrived.
+      
+    [This dish grants Horizon-Sight.]`,
+      zh: `有史以来超自然之力的融化化身中最美味的之一。
+      
+      （图管注：吃这道菜可以获得“极目远眺”。）`,
     },
     requires: [
       {
@@ -2040,8 +2044,12 @@ export const recipes: Recipe[] = [
       zh: "蘑菇蛋白酥"
     },
     description: {
-      en: "What in the Wolf-Divided's most splintered Name hath here been wrought?",
-      zh: "裂分之狼最为破碎的具名者在此处造化何物？"
+      en: `What in the Wolf-Divided's most splintered Name hath here been wrought?
+      
+    [Unlike most dishes, this one grants Memory: Regret.]`,
+      zh: `裂分之狼最为破碎的具名者在此处造化何物？
+      
+    (图管注：这道菜吃了会得到回忆：悔恨。是有多难吃……)`
     },
     requires: [
       {
@@ -2106,8 +2114,12 @@ export const recipes: Recipe[] = [
       zh: "洋葱烤菜"
     },
     description: {
-      en: "Harvey Hattington campaigned for the introduction of this dish to the infirmary during his time convalescing at Hush House, though Wakefield referred to it grumpily as 'Trojan Cheese'.",
-      zh: "哈维·哈廷顿在噤声居屋的疗养期间，曾积极将这道菜引进医务室。尽管韦克菲尔德不满地称其为“特洛伊奶酪”。（图管注：沙龙上喂这道菜给韦克菲尔德会让他流泪。）"
+      en: `Harvey Hattington campaigned for the introduction of this dish to the infirmary during his time convalescing at Hush House, though Wakefield referred to it grumpily as 'Trojan Cheese'.
+      
+      [Serving this dish to Wakefield during a salon will bring him to tears.]`,
+      zh: `哈维·哈廷顿在噤声居屋的疗养期间，曾积极将这道菜引进医务室。尽管韦克菲尔德不满地称其为“特洛伊奶酪”。
+      
+      （图管注：沙龙上喂这道菜给韦克菲尔德会让他流泪。）`
     },
     requires: [
       {
@@ -3369,8 +3381,12 @@ export const recipes: Recipe[] = [
       zh: "伊苏之墙",
     },
     description: {
-      en: "A frankly insensitive name that commemorates the inundation of that fabled city.",
-      zh: "坦率地说，这是一个相当无情的名字，用以纪念那座传说之城的沉没。",
+      en: `A frankly insensitive name that commemorates the inundation of that fabled city.
+    
+      [This dish grants Horizon-Sight.]`,
+      zh: `坦率地说，这是一个相当无情的名字，用以纪念那座传说之城的沉没。
+      
+      （图管注：吃这道菜可获得“极目远眺”。）`,
     },
     requires: [{
         id: "method 1",
