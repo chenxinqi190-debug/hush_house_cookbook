@@ -20,10 +20,22 @@ export const translations = {
       pudding: "Pudding",
       ingredients: "Ingredients",
     },
+    contaminationTitle: "Contamination",
+    contaminationCategories: {
+      corruption: "Corruption",
+      curse: "Curse",
+      infestation: "Infestation",
+      theoplasmic: "Theoplasmic Contamination",
+    },
+    solveRequires: "Requires",
     openRecipe: "How to make this? ",
     closeRecipe: "↵ Fold",
     closeMenu: "Close",
-    close: "Close"
+    close: "Close",
+    contaminationStart: "Choose a contamination to examine.",
+    recommendedSkills: "Recommended Skill",
+    alternativeSkills: "Alternative Skills",
+    noRecommendedSkill: "No recommended skill.",
   },
   zh: {
     about: "关于",
@@ -44,9 +56,22 @@ export const translations = {
       pudding: "甜点",
       ingredients: "食材",
     },
+    contaminationTitle: "污染",
+    contaminationCategories: {
+      corruption: "Corruption",
+      curse: "诅咒",
+      infestation: "Infestation",
+      theoplasmic: "神性流溢",
+    },
+    solveRequires: "去除要求",
     openRecipe: "展开做法",
     closeRecipe: "↵ 收起",
     closeMenu: "收起菜单",
-    close: "收起"
+    close: "收起",
+    contaminationStart: "选择一种污染。",
+recommendedSkills: "推荐技能",
+alternativeSkills: "其他可用技能",
+noRecommendedSkill: "无推荐技能。",
   },
+
 };
